@@ -1,0 +1,17 @@
+.brand {
+    padding: 18px;
+    margin: 0px 0px 0px -18px;
+    font-size: 26px;
+    font-weight: 500;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 88%;
+    @include bp(tablet) {
+        font-size: 32px;
+    }
+}
+.brand__link {
+    letter-spacing: -2px;
+    text-decoration: none;
+    color: $white;
+}

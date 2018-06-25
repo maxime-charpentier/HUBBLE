@@ -1,0 +1,84 @@
+@charset 'utf-8';
+
+
+/*
+|--------------------------------------------------------------------------
+| Application Variables
+|--------------------------------------------------------------------------
+|
+| The following line of code enables some application variables
+| to simplify development.
+|
+*/
+
+// Global
+@import 'helpers';
+@import 'mixins';
+@import 'variables';
+
+// Atoms
+@import 'components/atoms/article';
+@import 'components/atoms/brand';
+@import 'components/atoms/bullets';
+@import 'components/atoms/button';
+@import 'components/atoms/copyright';
+@import 'components/atoms/forms';
+@import 'components/atoms/illustration';
+@import 'components/atoms/modal';
+@import 'components/atoms/overlay';
+@import 'components/atoms/post';
+@import 'components/atoms/typography';
+
+// Molecules
+@import 'components/molecules/header';
+@import 'components/molecules/intro';
+@import 'components/molecules/menu';
+@import 'components/molecules/modals';
+@import 'components/molecules/posts';
+
+// Organisms
+@import 'components/organisms/main';
+@import 'components/organisms/wrapper';
+
+// Templates
+
+
+/*
+|--------------------------------------------------------------------------
+| Application Bases Properties
+|--------------------------------------------------------------------------
+|
+| The following lines of code enables some bases properties
+| to simplify development.
+|
+*/
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus { outline: none; }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    font-family: $fontFamily;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    background-color: $blueDark;
+    overflow: hidden;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.body--research {
+    @include bp(tablet) {
+        background-color: $blueMedium;
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "wearehubble",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
+    "prod": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "dotenv": "^6.0.0",
+    "svg-spritemap-webpack-plugin": "^1.2.0",
+    "webpack-mix": "^2.0.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "svg4everybody": "^2.1.9"
+  }
+}

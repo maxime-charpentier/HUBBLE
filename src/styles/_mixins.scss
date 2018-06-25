@@ -1,0 +1,12 @@
+/*
+Responsive breakpoints
+ */
+
+@mixin bp($point) {
+  @if $point == tablet {
+    @media (min-width: 576px) { @content; }
+  }
+  @else if $point == desktop {
+    @media (min-width: 960px) { @content; }
+  }
+}

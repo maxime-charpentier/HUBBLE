@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>loupe</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Interview-Mobile" transform="translate(-270.000000, -52.000000)" stroke="#FFFFFF">
+            <g id="Group-4" transform="translate(259.000000, 41.000000)">
+                <g id="loupe" transform="translate(12.380952, 12.380952)">
+                    <g id="Group-4">
+                        <circle id="Oval-3" stroke-width="2" cx="6.25" cy="6.25" r="6.25"></circle>
+                        <path d="M11.25,11.25 L14.5833333,14.5833333" id="Line" stroke-width="3" stroke-linecap="round"></path>
+                        <path d="M4.46284967,2.5 C4.46284967,2.5 4.01895229,2.65134369 3.48142483,3.28200765 C3.08393362,3.74837153 2.54714124,4.68052311 2.55873873,4.94867432 C2.57352672,5.29059488 2.41947149,5.77491466 2.55873873,6.61534099 C2.62736648,7.02948411 2.96251497,7.42113677 3.04190974,8.13813005" id="Path-3" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

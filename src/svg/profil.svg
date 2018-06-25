@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>AI</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="39.6970847%" y1="0%" x2="73.6298936%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#4F53FA" offset="0%"></stop>
+            <stop stop-color="#39389F" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="45" cy="45" r="39.1666667"></circle>
+        <filter x="-2.6%" y="-2.6%" width="105.1%" height="105.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-5.1%" y="-5.1%" width="110.2%" height="110.2%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Jobs-Question-Mobile" transform="translate(-147.000000, -163.000000)">
+            <g id="Content" transform="translate(32.000000, 125.000000)">
+                <g id="AI" transform="translate(112.000000, 35.000000)">
+                    <path d="M10.8333333,44.0347423 C11.1312757,42.6999549 11.5438474,41.0461071 12.2266431,38.7995173 C13.9519153,33.1228869 19.0288377,25.5540464 21.1740697,25.5540464 C27.4487216,25.5540464 33.3247789,43.2146743 40.4655418,43.2146743 C44.7253939,43.2146743 55.9674203,27.9957092 60.5465364,25.5540464 C63.6021471,23.9247428 68.873858,22.5361352 73.7246892,28.70773 C75.4668384,30.9242241 77.5586086,36.3906089 80,45.1068844 C77.5387737,52.2918313 75.1458529,58.7795627 72.8212374,64.5700785 C66.4303768,73.4669272 56.5923952,79.1666667 45.5574619,79.1666667 C27.4046135,79.1666667 12.4908831,63.742378 10.8333333,44.0347423 Z" id="Oval-3-Copy" fill="url(#linearGradient-1)"></path>
+                    <path d="M10.8572783,47.7080272 C12.2744051,44.0929327 14.846675,41.3370172 15.1848508,41.0227925 C17.5923317,38.7858194 20.016292,36.7675035 22.1029941,35.9948186 C27.5793516,33.9669782 36.7329514,51.707237 43.8345002,51.707237 C48.0709589,51.707237 58.4420177,40.8362583 62.9959872,38.661507 C67.2679858,36.6214113 72.9322779,38.5770913 79.9888634,44.5285472 C79.996273,44.8230008 80,45.1183686 80,45.4146062 C80,64.5155918 64.5051116,80 45.391198,80 C27.0484261,80 12.0385542,65.7398101 10.8572783,47.7080272 Z" id="Oval-3" fill="url(#linearGradient-2)"></path>
+                    <g id="Oval-4" filter="url(#filter-4)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                        <use stroke="#39389F" stroke-width="4" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

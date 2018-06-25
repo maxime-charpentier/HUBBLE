@@ -1,0 +1,13 @@
+.illustration {
+    z-index: -1;
+    display: none;
+    @include bp(desktop) {
+        display: block;
+        width: auto;
+        height: 38vw;
+    }
+    @media (min-width: 1248px) {
+        height: 42vw;
+        margin-right: 80px;
+    }
+}

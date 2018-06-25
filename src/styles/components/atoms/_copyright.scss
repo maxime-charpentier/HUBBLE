@@ -1,0 +1,22 @@
+.copyright {
+    display: inline-block;
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    color: $white;
+    @include bp(tablet) {
+        font-weight: 500;
+    }
+}
+.copyright__symbol {
+    @include bp(tablet) {
+        font-weight: 300;
+    }
+}
+.copyright__adding {
+    display: none;
+    @include bp(tablet) {
+        display: inline-block;
+        font-weight: 300;
+    }
+}

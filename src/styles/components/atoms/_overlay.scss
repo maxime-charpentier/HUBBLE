@@ -1,0 +1,20 @@
+.overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 18;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0;
+    transition: .4s ease;
+}
+.overlay--fade {
+    opacity: .6;
+}
+.overlay--active {
+    display: block;
+}

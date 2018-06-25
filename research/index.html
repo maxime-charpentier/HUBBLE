@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hubble: Space Jobs</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+        <link rel="stylesheet" href="dist/app.css">
+    </head>
+    <body class="body--research">
+        <div class="overlay"></div>
+        <div class="wrapper wrapper--research" style="background-image: url('src/svg/wave.svg');">
+            <header class="header">
+                <h1 class="brand z-index" style="background-image: url('src/svg/dots.svg');">
+                    <a class="brand__link" href="index.html">hubble.</a>
+                </h1>
+                <div class="header__buttons">
+                    <button class="button button--medium" id="skip-button">Skip</button>
+                    <button id="button-search" class="button button--small button--hidden" style="background-image: url('src/svg/search.svg');"></button>
+                    <button id="button-burger" class="button button--burger button--small z-index"></button>
+                    <button id="button-filters" class="button button--big button--hidden">Filters</button>
+                    <button id="button-recruiters" class="button button--big button--hidden">Recruiters</button>
+                </div>
+            </header>
+            <section class="modals">
+                <div class="modal__container">
+                    <div class="modal" id="modal-0">
+                        <div class="modal__body">
+                            <img class="modal__image" src="src/svg/profil.svg" alt="Profil placeholder">
+                            <p class="modal__feedback">Okay !</p>
+                            <p class="modal__question">Now, what's your favorite field ?</p>
+                            <div class="filters">
+                                <div class="filters__container">
+                                    <label class="filter filter--big filter--0" for="jobs">Personal Branding</label>
+                                    <label class="filter filter--small filter--0" for="jobs">Air Space</label>
+                                </div>
+                                <div class="filters__container">
+                                    <label class="filter filter--small filter--0" for="jobs">Tech</label>
+                                    <label class="filter filter--big filter--0" for="jobs">Machine & Maintenance</label>
+                                </div>
+                                <div class="filters__container">
+                                    <label class="filter filter--big filter--0" for="jobs">Digital & Communication</label>
+                                    <label class="filter filter--small filter--0" for="jobs">Food</label>
+                                </div>
+                                <div class="filters__container">
+                                    <label class="filter filter--medium filter--0" for="jobs">Security</label>
+                                    <label class="filter filter--medium filter--0" for="jobs">Health</label>
+                                    <label class="filter filter--medium filter--0" for="jobs">Business</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__footer">
+                            <div class="modal__bullets">
+                                <div class="modal__bullet modal__bullet--active"></div>
+                                <div class="modal__bullet"></div>
+                                <div class="modal__bullet"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__container">
+                    <div class="modal" id="modal-1">
+                        <div class="modal__body">
+                            <img class="modal__image" src="src/svg/profil.svg" alt="Profil placeholder">
+                            <p class="modal__feedback">Copy that !</p>
+                            <p class="modal__question">How long do you want to stay ?</p>
+                            <div class="filters">
+                                <label class="filter filter--1" for="jobs">6 mounths</label>
+                                <label class="filter filter--1" for="jobs">1 year</label>
+                                <label class="filter filter--1" for="jobs">+1 year</label>
+                            </div>
+                        </div>
+                        <div class="modal__footer">
+                            <div class="modal__bullets">
+                                <div class="modal__bullet"></div>
+                                <div class="modal__bullet modal__bullet--active"></div>
+                                <div class="modal__bullet"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__container">
+                    <div class="modal" id="modal-2">
+                        <div class="modal__body">
+                            <img class="modal__image" src="src/svg/profil.svg" alt="Profil placeholder">
+                            <p class="modal__feedback">I got you !</p>
+                            <p class="modal__question">Tell me where ?</p>
+                            <div class="filters">
+                                <div class="filters__container">
+                                    <label class="filter filter--2" for="jobs">Mars</label>
+                                    <label class="filter filter--2" for="jobs">Mercury</label>
+                                </div>
+                                <div class="filters__container">
+                                    <label class="filter filter--2" for="jobs">Resistance</label>
+                                    <label class="filter filter--2" for="jobs">Venus</label>
+                                </div>
+                                <div class="filters__container">
+                                    <label class="filter filter--2" for="jobs">Midria</label>
+                                    <label class="filter filter--2" for="jobs">Saturn</label>
+                                </div>
+                                <div class="filters__container">
+                                    <label class="filter filter--2" for="jobs">Uranus</label>
+                                    <label class="filter filter--2" for="jobs">Jupiter</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__footer">
+                            <div class="modal__bullets">
+                                <div class="modal__bullet"></div>
+                                <div class="modal__bullet"></div>
+                                <div class="modal__bullet modal__bullet--active"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <main class="main main--hidden">
+                <section class="posts">
+                    <div class="post">
+                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
+                        <div class="post__content">
+                            <span class="post__label">Business</span>
+                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
+                        <div class="post__content">
+                            <span class="post__label">Business</span>
+                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
+                        <div class="post__content">
+                            <span class="post__label">Business</span>
+                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
+                        </div>
+                    </div>
+                    <div class="post" data-id="1088">
+                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
+                        <div class="post__content">
+                            <span class="post__label">Business</span>
+                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
+                        <div class="post__content">
+                            <span class="post__label">Business</span>
+                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
+                        <div class="post__content">
+                            <span class="post__label">Business</span>
+                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
+                        <div class="post__content">
+                            <span class="post__label">Business</span>
+                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
+                        <div class="post__content">
+                            <span class="post__label">Business</span>
+                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
+                        <div class="post__content">
+                            <span class="post__label">Business</span>
+                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
+                        </div>
+                    </div>
+                </section>
+                <div class="bullets">
+                    <button class="bullet bullet--active"></button>
+                    <button class="bullet"></button>
+                    <button class="bullet"></button>
+                    <button class="bullet"></button>
+                    <button class="bullet"></button>
+                    <button class="bullet"></button>
+                </div>
+            </main>
+        </div>
+        <article class="article article--hidden">
+            <button class="button button--small button--article z-index"></button>
+            <div class="article__container">
+                <header class="article__header">
+                    <img class="article__image" src="src/images/1.jpg" alt="Job Image">
+                    <div class="article__heading">
+                        <span class="article__label">Business</span>
+                        <h3 class="article__title">Corporate<br>Disorganizer</h3>
+                    </div>
+                </header>
+                <main class="article__content">
+                    <ul class="article__items">
+                        <li class="article__item">
+                            <h4 class="article__category article__category--term">Term</h4>
+                            <p class="article__text article__text--term">1 year mission</p>
+                        </li>
+                        <li class="article__item">
+                            <h4 class="article__category">Location</h4>
+                            <p class="article__text">Lunar Spaceship, Venus</p>
+                            <p class="article__text">Right Ascension: 08h 37m</p>
+                        </li>
+                        <li class="article__item">
+                            <h4 class="article__category">Salary</h4>
+                            <p class="article__text">40k ES / Year</p>
+                        </li>
+                        <li class="article__item">
+                            <h4 class="article__category">Description</h4>
+                            <p class="article__text">The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common</p>
+                        </li>
+                    </ul>
+                </main>
+                <footer class="article__footer">
+                    <button class="button button--big button--dark">Apply</button>
+                </footer>
+            </div>
+            <img class="article__image--desktop" src="src/images/1.jpg" alt="Job Image">
+        </article>
+        <nav class="menu">
+            <button class="button button--big margin-top margin-bottom">Filters</button>
+            <button class="button button--big">Recruiter</button>
+        </nav>
+        <form class="form" id="register" action="" method="post" role="form">
+            <input name="category" value="jobs" id="jobs" form="register" type="checkbox">
+            <input name="category" value="companies" id="companies" form="register" type="checkbox">
+            <input name="category" value="profession" id="profession" xform="register" type="checkbox">
+            <input name="duration" value="6 months" id="jobs" form="register" type="checkbox">
+            <input name="duration" value="1 year" id="companies" form="register" type="checkbox">
+            <input name="duration" value="+1 year" id="profession" xform="register" type="checkbox">
+        </form>
+        <script src="dist/app.js"></script>
+    </body>
+</html>
+
+
+
+
+

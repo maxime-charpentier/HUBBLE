@@ -1,0 +1,9 @@
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - (43px + 74px + 19px + 43px));
+}
+.intro__buttons {
+    display: flex;
+}

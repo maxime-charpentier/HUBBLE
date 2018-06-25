@@ -1,0 +1,15 @@
+.modals {
+    display: flex;
+    width: calc(300vw - 35px);
+    padding: 32px 0px 0px 0px;
+    transition: .4s;
+    @include bp(tablet) {
+        justify-content: space-between;
+    }
+    &--fade {
+        opacity: 0;
+    }
+    &--hidden {
+        display: none;
+    }
+}
