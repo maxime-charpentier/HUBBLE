@@ -18,9 +18,9 @@
                 <div class="header__buttons">
                     <button class="button button--medium" id="skip-button">Skip</button>
                     <button id="button-search" class="button button--small button--hidden" style="background-image: url('src/svg/search.svg');"></button>
-                    <button id="button-burger" class="button button--burger button--small z-index"></button>
+                    <button id="button-burger" class="button button--burger button--small z-index button--hidden"></button>
                     <button id="button-filters" class="button button--big button--hidden">Filters</button>
-                    <button id="button-recruiters" class="button button--big button--hidden">Recruiters</button>
+                    <a id="button-recruiters" class="button button--big" href="../recruiter">Recruiter</a>
                 </div>
             </header>
             <section class="modals">
@@ -230,7 +230,7 @@
         </article>
         <nav class="menu">
             <button class="button button--big margin-top margin-bottom">Filters</button>
-            <button class="button button--big">Recruiter</button>
+            <a class="button button--big" href="../recruiter">Recruiter</a>
         </nav>
         <form class="form" id="register" action="" method="post" role="form">
             <input name="category" value="jobs" id="jobs" form="register" type="checkbox">

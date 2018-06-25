@@ -273,6 +273,10 @@ var recruitersButton = document.querySelector('#button-recruiters');
 
 function showHeaderButtons() {
     searchButton.classList.remove('button--hidden');
+    if (window.innerWidth < 960) {
+        menuButton.classList.remove('button--hidden');
+        recruitersButton.classList.add('button--hidden');
+    }
     if (window.innerWidth > 960) {
         filtersButton.classList.remove('button--hidden');
         recruitersButton.classList.remove('button--hidden');
@@ -296,6 +300,11 @@ for (let a = 0; a < bullets.length; a++) {
         }
     });
 }
+
+/*
+Return to filters when click on Filters Button
+ */
+
 
 
 
