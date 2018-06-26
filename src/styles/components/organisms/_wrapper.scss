@@ -4,18 +4,11 @@
     padding: 43px 35px;
     background-size: 0%;
     overflow: hidden;
-    &--home {
+    &--background {
         @include bp(tablet) {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-        }
-    }
-    &--research {
-        @include bp(tablet) {
-            background-position: left;
-            background-repeat: no-repeat;
-            background-size: contain;
         }
     }
 }
@@ -28,7 +21,7 @@
     width: 200px;
     height: 36px;
     content: '';
-    background-color: $purple;
+    background-color: $purpleMedium;
     border-radius: 100px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .3);
     transform: rotate(30deg);
@@ -52,4 +45,7 @@
     @include bp(tablet) {
         display: none;
     }
+}
+.wrapper--purple::after {
+    background-color: $purpleLight;
 }

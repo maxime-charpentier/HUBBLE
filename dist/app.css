@@ -460,6 +460,14 @@ Responsive breakpoints
   display: none;
 }
 
+.button--purple--light {
+  background-color: #BA69C8;
+}
+
+.button--purple--dark {
+  background-color: #BA69C8;
+}
+
 @media (min-width: 576px) {
   .header__buttons .button {
     -webkit-box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.25);
@@ -469,12 +477,6 @@ Responsive breakpoints
 
 .header__buttons .button:not(:last-child) {
   margin-right: 16px;
-}
-
-#button-search {
-  background-size: 45%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .button--hidden {
@@ -588,6 +590,223 @@ Burger Button
     height: 42vw;
     margin-right: 80px;
   }
+}
+
+.interview {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  background-color: #EFEFFC;
+  border-radius: 24px;
+  -webkit-box-shadow: -1px 4px 18px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: -1px 4px 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 576px) {
+  .interview {
+    width: 60%;
+  }
+}
+
+@media (min-width: 960px) {
+  .interview {
+    width: 45%;
+    padding: 48px 54px;
+  }
+}
+
+.interview--hidden {
+  display: none;
+}
+
+#interview-2 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#interview-0 .interview__container {
+  margin: auto;
+}
+
+.interview__title {
+  margin: 0px 0px 0px 0px;
+  font-weight: 500;
+  font-size: 27px;
+  color: #39389F;
+}
+
+#interview-win .interview__title,
+#interview-fail .interview__title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.interview__title--light {
+  font-weight: 300;
+}
+
+.interview__text {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #39389F;
+}
+
+#interview-win .interview__text,
+#interview-fail .interview__text {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+#interview-0 .interview__text {
+  margin-top: 32px;
+}
+
+.interview__text--bold {
+  font-weight: 500;
+}
+
+.interview__touch {
+  position: absolute;
+  bottom: 54px;
+  width: 54px;
+  height: 54px;
+  padding: 0px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.interview__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.interview__profil {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 24px;
+  padding: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #39389F;
+  -webkit-box-shadow: 0px 0px 60px rgba(57, 56, 159, 0.25);
+          box-shadow: 0px 0px 60px rgba(57, 56, 159, 0.25);
+}
+
+.interview__button {
+  width: 153px;
+  height: 43px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #FAFAFA;
+  background-color: #39389F;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+}
+
+#interview-1 .interview__button {
+  margin-top: 54px;
+}
+
+#interview-2 .interview__button {
+  width: 124px;
+}
+
+#interview-2 .interview__button:not(:last-child) {
+  margin-right: 24px;
+}
+
+/*#interview-1 .interview__button,
+#interview-win .interview__button,
+#interview-fail .interview__button, {
+    @include bp(tablet) {
+        position: absolute;
+        bottom: 54px;
+    }
+}*/
+
+.interview__infos {
+  z-index: 2;
+  width: 100%;
+  padding-bottom: 24px;
+  background-color: #EFEFFC;
+}
+
+.interview__messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.interview__message {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0px 0px 18px 0px;
+  padding: 12px 16px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #FAFAFA;
+  border-radius: 100px;
+}
+
+.interview__message--ia {
+  background-color: #4F53FA;
+}
+
+.interview__message--user {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: #7375CB;
+}
+
+.interview__footer {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: calc(43px + 28px * 2);
+  border-top: 1px solid rgba(57, 56, 159, 0.15);
 }
 
 .modal__container {
@@ -986,6 +1205,262 @@ Burger Button
   color: #FAFAFA;
 }
 
+.searchbar {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+@media (min-width: 576px) {
+  .searchbar {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.searchbar__form {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 40px;
+}
+
+.searchbar__input {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 16px 44px 16px 16px;
+  color: #FAFAFA;
+  background-color: #39389F;
+  border: none;
+  border-radius: 120px;
+  -webkit-appearance: none;
+}
+
+@media (min-width: 576px) {
+  .searchbar__input {
+    height: 50px;
+    padding-right: 54px;
+  }
+}
+
+.searchbar__input::-webkit-search-cancel-button {
+  display: none;
+}
+
+#button-search {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 10;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100vw - 35px * 2);
+  padding: 32px 0px 0px 0px;
+}
+
+.sign__modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100vw - (35px + 35px));
+  height: calc(100vh - (43px + 32px + 67px + 43px));
+  padding: 32px 24px;
+  background-color: #E6E4E4;
+  border-radius: 24px;
+  -webkit-box-shadow: -1px 4px 18px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: -1px 4px 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 576px) {
+  .sign__modal {
+    width: 60%;
+  }
+}
+
+@media (min-width: 960px) {
+  .sign__modal {
+    width: 50%;
+  }
+}
+
+.sign__title {
+  margin: 0px 0px 42px 0px;
+  font-size: 27px;
+  font-weight: 300;
+  text-align: center;
+  color: #6A1B9A;
+}
+
+@media (min-width: 960px) {
+  .sign__title {
+    font-size: 45px;
+  }
+}
+
+.sign__title--bold {
+  font-weight: 500;
+}
+
+.sign__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign__input {
+  width: 228px;
+  height: 42px;
+  margin-bottom: 18px;
+  padding: 0px 16px;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  color: #6A1B9A;
+  background-color: #E6E4E4;
+  border: 2px solid #6A1B9A;
+  border-radius: 120px;
+  -webkit-appearance: none;
+}
+
+@media (min-width: 960px) {
+  .sign__input {
+    width: 390px;
+    height: 49px;
+    margin-bottom: 26px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+
+.sign__input::-webkit-input-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  color: #6A1B9A;
+}
+
+.sign__input:-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  color: #6A1B9A;
+}
+
+.sign__input::-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  color: #6A1B9A;
+}
+
+.sign__input::placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  color: #6A1B9A;
+}
+
+@media (min-width: 960px) {
+  .sign__input::-webkit-input-placeholder {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .sign__input:-ms-input-placeholder {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .sign__input::-ms-input-placeholder {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .sign__input::placeholder {
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+
+.sign__input--last {
+  margin-bottom: 34px;
+}
+
+@media (min-width: 960px) {
+  .sign__input--last {
+    margin-bottom: 64px;
+  }
+}
+
+.sign__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 116px;
+  height: 37px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FAFAFA;
+  background-color: #6A1B9A;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 960px) {
+  .sign__button {
+    width: 160px;
+    height: 48px;
+    font-size: 17px;
+  }
+}
+
 .typo--h1 {
   margin: 0px 0px 36px 0px;
   font-size: 45px;
@@ -1031,6 +1506,39 @@ Burger Button
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.interviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(500vw - 35px * 2);
+  padding: 32px 0px 0px 0px;
+  opacity: 0;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
+.interviews--hidden {
+  display: none;
+}
+
+.interviews--fade {
+  opacity: 1;
+}
+
+.interview__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100vw - (35px + 35px));
+  height: calc(100vh - (43px + 32px + 67px + 43px));
 }
 
 .intro {
@@ -1092,8 +1600,8 @@ Burger Button
   display: flex;
   width: calc(300vw - 35px);
   padding: 32px 0px 0px 0px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
 @media (min-width: 576px) {
@@ -1156,18 +1664,10 @@ Burger Button
 }
 
 @media (min-width: 576px) {
-  .wrapper--home {
+  .wrapper--background {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-}
-
-@media (min-width: 576px) {
-  .wrapper--research {
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 
@@ -1180,7 +1680,7 @@ Burger Button
   width: 200px;
   height: 36px;
   content: '';
-  background-color: #A100FF;
+  background-color: #AD25FF;
   border-radius: 100px;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
@@ -1215,6 +1715,10 @@ Burger Button
   .wrapper::after {
     display: none;
   }
+}
+
+.wrapper--purple::after {
+  background-color: #BA69C8;
 }
 
 /*
@@ -1257,10 +1761,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.body--background {
+  background-size: 0%;
+}
+
+@media (min-width: 576px) {
+  .body--background {
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 @media (min-width: 576px) {
   .body--research {
     background-color: #4F53FA;
   }
+}
+
+.body--recruiter {
+  background-color: #6A1B9A;
 }
 
 

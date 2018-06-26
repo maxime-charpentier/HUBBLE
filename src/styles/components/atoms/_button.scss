@@ -59,6 +59,12 @@
     &--hidden {
         display: none;
     }
+    &--purple--light {
+        background-color: $purpleLight;
+    }
+    &--purple--dark {
+        background-color: $purpleLight;
+    }
 }
 .header__buttons .button {
     @include bp(tablet) {
@@ -67,11 +73,6 @@
 }
 .header__buttons .button:not(:last-child) {
     margin-right: 16px;
-}
-#button-search {
-    background-size: 45%;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .button--hidden {
     display: none;

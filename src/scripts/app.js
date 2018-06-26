@@ -174,6 +174,7 @@ Filters
 var filters0 = document.querySelectorAll('.filter--0');
 var filters1 = document.querySelectorAll('.filter--1');
 var filters2 = document.querySelectorAll('.filter--2');
+var body = document.querySelector(body);
 
 for (let a = 0; a < filters0.length; a++) {
     filters0[a].addEventListener('click', function() {
@@ -302,10 +303,65 @@ for (let a = 0; a < bullets.length; a++) {
 }
 
 /*
-Return to filters when click on Filters Button
+Interview
  */
 
+var applyButton = document.querySelector('#button-apply');
+var interviewsContainer = document.querySelector('.interviews');
+var backButton = document.querySelector('#button-back');
 
+backButton.addEventListener('click', function() {
+    counter = 0;
+    setTimeout(function() {
+        backButton.classList.add('button--hidden');
+        interviewsContainer.classList.remove('interviews--fade');
+    }, 400);
+    setTimeout(function() {
+        interviewsContainer.classList.add('interviews--hidden');
+        main.classList.remove('main--hidden');
+    }, 800);
+});
+
+applyButton.addEventListener('click', function() {
+    counter = 0;
+    main.classList.add('main--hidden');
+    article.classList.add('article--hidden');
+    overlay.classList.remove('overlay--active');
+    interviewsContainer.classList.remove('interviews--hidden');
+    backButton.classList.remove('button--hidden');
+    setTimeout(function() {
+        interviewsContainer.classList.add('interviews--fade');
+    }, 150);
+});
+
+var interview0 = document.querySelector('#interview-0');
+var touchButton = document.querySelector('.interview__touch');
+var startButton = document.querySelector('#interview-start');
+
+touchButton.addEventListener('click', function() {
+    interview0.classList.remove('interview--active');
+    counter++;
+    var windowWidth = document.body.clientWidth;
+    interviewsContainer.style.transition = '.4s ease';
+    interviewsContainer.style.marginLeft = '-' + (counter * windowWidth) + 'px';
+});
+
+window.addEventListener('keydown', function() {
+    if (interview0.classList.contains('interview--active')) {
+        interview0.classList.remove('interview--active');
+        counter++;
+        var windowWidth = document.body.clientWidth;
+        interviewsContainer.style.transition = '.4s ease';
+        interviewsContainer.style.marginLeft = '-' + (counter * windowWidth) + 'px';
+    }
+});
+
+startButton.addEventListener('click', function() {
+    counter++;
+    var windowWidth = document.body.clientWidth;
+    interviewsContainer.style.transition = '.4s ease';
+    interviewsContainer.style.marginLeft = '-' + (counter * windowWidth) + 'px';
+});
 
 
 /**

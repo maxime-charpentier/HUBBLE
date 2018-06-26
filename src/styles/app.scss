@@ -24,13 +24,17 @@
 @import 'components/atoms/copyright';
 @import 'components/atoms/forms';
 @import 'components/atoms/illustration';
+@import 'components/atoms/interview';
 @import 'components/atoms/modal';
 @import 'components/atoms/overlay';
 @import 'components/atoms/post';
+@import 'components/atoms/searchbar';
+@import 'components/atoms/sign';
 @import 'components/atoms/typography';
 
 // Molecules
 @import 'components/molecules/header';
+@import 'components/molecules/interviews';
 @import 'components/molecules/intro';
 @import 'components/molecules/menu';
 @import 'components/molecules/modals';
@@ -77,8 +81,19 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.body--background {
+    background-size: 0%;
+    @include bp(tablet) {
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
 .body--research {
     @include bp(tablet) {
         background-color: $blueMedium;
     }
+}
+.body--recruiter {
+    background-color: $purpleDark;
 }

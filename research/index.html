@@ -5,19 +5,26 @@
         <title>Hubble: Space Jobs</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">-->
         <link rel="stylesheet" href="dist/app.css">
     </head>
-    <body class="body--research">
+    <body class="body--background body--research" style="background-image: url('src/svg/wave.svg');">
         <div class="overlay"></div>
-        <div class="wrapper wrapper--research" style="background-image: url('src/svg/wave.svg');">
+        <div class="wrapper wrapper--background" style="background-image: url('src/svg/background.svg');">
             <header class="header">
                 <h1 class="brand z-index" style="background-image: url('src/svg/dots.svg');">
                     <a class="brand__link" href="index.html">hubble.</a>
                 </h1>
                 <div class="header__buttons">
                     <button class="button button--medium" id="skip-button">Skip</button>
-                    <button id="button-search" class="button button--small button--hidden" style="background-image: url('src/svg/search.svg');"></button>
+                    <button class="button button--medium button--hidden" id="button-back">Back</button>
+                    <div class="searchbar">
+                        <form class="searchbar__form" action="get">
+                            <input class="searchbar__input" type="search">
+                            <input type="submit" id="button-search" class="searchbar__submit button button--small button--hidden" style="background-image: url('src/svg/search.svg');">
+                            <button id="button-search" class="button button--small button--hidden" style="background-image: url('src/svg/search.svg');"></button>
+                        </form>
+                    </div>
                     <button id="button-burger" class="button button--burger button--small z-index button--hidden"></button>
                     <button id="button-filters" class="button button--big button--hidden">Filters</button>
                     <a id="button-recruiters" class="button button--big" href="../recruiter">Recruiter</a>
@@ -190,6 +197,65 @@
                     <button class="bullet"></button>
                 </div>
             </main>
+            <div class="interviews interviews--hidden">
+                <div class="interview__wrapper">
+                    <div class="interview interview--active" id="interview-0">
+                        <h3 class="interview__title">The Pre Interview</h3>
+                        <h4 class="interview__title interview__title--light">Blue Agency</h4>
+                        <p class="interview__text">So you want to work at Ueno?  It's not complicated. Just walk the walk. Talk the talk. Through and No big deal Space & Jobs.</p>
+                        <button class="interview__touch">
+                            <img class="interview__icon" src="src/svg/touch.svg" alt="Digital detection">
+                        </button>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="interview" id="interview-1">
+                        <img class="interview__profil" src="src/images/profil.jpg" alt="Profil picture">
+                        <h3 class="interview__title">Hello, <span class="interview__title interview__title--light">Clark Griffin</span></h3>
+                        <h4 class="interview__text">Corporate Designer</h4>
+                        <button class="interview__button" id="interview-start">Start the interview</button>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="interview" id="interview-2">
+                        <div class="interview__infos">
+                            <p class="interview__text">Agency Blue</p>
+                            <p class="interview__text interview__text--bold">Najla Dyala Operations</p>
+                        </div>
+                        <div class="interview__messages">
+                            <p class="interview__message interview__message--ia">Hey, I’m Najla! I’m a People Operations</p>
+                            <p class="interview__message interview__message--user">Um, why do I look like a hot dog?</p>
+                            <p class="interview__message interview__message--ia">Cool! Sounds like you’re a perfect fit</p>
+                            <p class="interview__message interview__message--ia">I’d like to add you on LinkedIn.</p>
+                            <p class="interview__message interview__message--user">I’m ready let’s go</p>
+                        </div>
+                        <div class="interview__footer">
+                            <button class="interview__button">Let's connect</button>
+                            <button class="interview__button">Can I hug you ?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="interview interview--hidden" id="interview-win">
+                        <div class="interview__container">
+                            <p class="interview__title">Well Done !</p>
+                            <p class="interview__text">You just pass the pre-interview with our AI Bot. Please take a holo appointment for the final interview</p>
+                            <p class="interview__text">Team, <span class="interview__text interview__text--bold">BlueAgency</span></p>
+                        </div>
+                        <button class="interview__button">Next Step</button>
+                    </div>
+                </div>
+                <div class="interview__wrapper">
+                    <div class="interview interview--hidden" id="interview-fail">
+                        <div class="interview__container">
+                            <p class="interview__title">Oh no !</p>
+                            <p class="interview__text">I’m sure you are lifted for another job. Please check out our other offerts, keep going !</p>
+                            <p class="interview__text">Team, BlueAgency</p>
+                        </div>
+                        <button class="interview__button">Job Offers</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <article class="article article--hidden">
             <button class="button button--small button--article z-index"></button>
@@ -223,7 +289,7 @@
                     </ul>
                 </main>
                 <footer class="article__footer">
-                    <button class="button button--big button--dark">Apply</button>
+                    <button class="button button--big button--dark" id="button-apply">Apply</button>
                 </footer>
             </div>
             <img class="article__image--desktop" src="src/images/1.jpg" alt="Job Image">

@@ -1,0 +1,20 @@
+.interviews {
+    display: flex;
+    justify-content: space-between;
+    width: calc(500vw - 35px * 2);
+    padding: 32px 0px 0px 0px;
+    opacity: 0;
+    transition: .8s ease;
+}
+.interviews--hidden {
+    display: none;
+}
+.interviews--fade {
+    opacity: 1;
+}
+.interview__wrapper {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - (35px + 35px));
+    height: calc(100vh - (43px + 32px + 67px + 43px));
+}
