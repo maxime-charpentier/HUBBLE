@@ -5,6 +5,12 @@
     width: calc(100vw - 35px * 2);
     padding: 32px 0px 0px 0px;
 }
+.profil--fade {
+    opacity: 0;
+}
+.profil--hidden {
+    display: none;
+}
 .profil__modal {
     display: flex;
     flex-direction: column;

@@ -367,13 +367,18 @@ startButton.addEventListener('click', function() {
 /**
  * AJAX EXXAMPLE
  */
-/*
-try {
+
+/*try {
     window.$ = window.jQuery = require('jquery');
     var posts = [];
 
+    $.get('http://api.wearehubble.test', function (data) {
+        console.log(data);
+    });*/
+
+    /*
     $('.button').submit(function () {
-        $.get('https://api.hubble.com/posts', $('.form').serialize(), function (data) {
+        $.get('https://wearehubble.test/assets/api.php', $('.form').serialize(), function (data) {
             posts = data;
             if ($(window).width() > 576) {
                 appendPosts(6);
@@ -386,8 +391,9 @@ try {
             }
         });
     });
+    */
 
-    function appendPosts(limit) {
+ /*   function appendPosts(limit) {
         for (var i = 0; i < limit; i++) {
             $('.posts').append(`<article class="post post--${i}" data-id="${i}">
                 <h1>${posts[i].title}</h1>
@@ -414,5 +420,24 @@ try {
         $('.article__label').text(post.label);
         $('.article__text--term').text(post.term);
     });
-} catch (e) {}
+} catch (e) {}*/
+
+/****************
+
+Recruiters
+
+ ****************/
+
+/*
+var dashboardButton document.querySelector('.profil__button')
+
+dashboardButton.addEventListener('click', function() {
+    setTimeout(function() {
+        interviewsContainer.classList.add('profil--fade');
+    }, 400);
+    setTimeout(function() {
+        interviewsContainer.classList.add('profil--hidden');
+        main.classList.remove('dashboard--hidden');
+    }, 800);
+});
 */

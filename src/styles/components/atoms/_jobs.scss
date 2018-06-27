@@ -1,0 +1,86 @@
+.job {
+    position: relative;
+    width: calc(100vw - (35px + 35px));
+    height: 100%;
+    padding: 24px 18px;
+    background-color: $purpleMedium;
+    border-radius: 15px;
+    box-shadow: -1px 4px 18px 0 rgba(0, 0, 0, .5);
+    cursor: pointer;
+    @include bp(desktop) {
+        width: auto;
+        height: auto;
+        background-color: $whiteDark;
+    }
+}
+.gestion__container .job:nth-child(1) {
+    @include bp(desktop) {
+        grid-row: 1 / 1;
+        grid-column: 2 / 2;
+    }
+}
+.gestion__container .job:nth-child(2) {
+    @include bp(desktop) {
+        grid-row: 1 / 1;
+        grid-column: 3 / 3;
+    }
+}
+.gestion__container .job:nth-child(3) {
+    @include bp(desktop) {
+        grid-row: 2 / 2;
+        grid-column: 2 / 2;
+    }
+}
+.gestion__container .job:nth-child(4) {
+    @include bp(desktop) {
+        grid-row: 2 / 2;
+        grid-column: 3 / 3;
+    }
+}
+.job:not(:last-child) {
+    margin-right: 15px;
+    @include bp(desktop) {
+        margin: 0px;
+    }
+}
+.job__buttons {
+    position: absolute;
+    top: 24px;
+    right: 18px;
+    left: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.job__button {
+    padding: 0px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.job__infos {
+    position: absolute;
+    right: 18px;
+    bottom: 24px;
+    left: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.job__title {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $white;
+    @include bp(desktop) {
+        color: $blackMedium;
+    }
+}
+.job__label {
+    font-size: 17px;
+    font-weight: 300;
+    color: $white;
+    @include bp(desktop) {
+        color: $blackMedium;
+    }
+}

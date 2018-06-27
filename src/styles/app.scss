@@ -22,9 +22,11 @@
 @import 'components/atoms/bullets';
 @import 'components/atoms/button';
 @import 'components/atoms/copyright';
+@import 'components/atoms/dashboard';
 @import 'components/atoms/forms';
 @import 'components/atoms/illustration';
 @import 'components/atoms/interview';
+@import 'components/atoms/jobs';
 @import 'components/atoms/modal';
 @import 'components/atoms/overlay';
 @import 'components/atoms/post';
@@ -34,6 +36,7 @@
 @import 'components/atoms/typography';
 
 // Molecules
+@import 'components/molecules/gestion';
 @import 'components/molecules/header';
 @import 'components/molecules/interviews';
 @import 'components/molecules/intro';

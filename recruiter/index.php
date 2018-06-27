@@ -5,24 +5,24 @@
         <title>Hubble: Space Jobs</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">-->
         <link rel="stylesheet" href="dist/app.css">
     </head>
-    <body class="body--background">
-        <div class="wrapper wrapper--home wrapper--background" style="background-image: url('src/svg/background.svg');">
+    <body class="body--recruiter">
+        <div class="wrapper wrapper--purple wrapper--background" style="background-image: url('/src/svg/background.svg');">
             <header class="header">
-                <h1 class="brand" style="background-image: url('src/svg/dots.svg');">
-                    <a class="brand__link" href="index.html">hubble.</a>
+                <h1 class="brand" style="background-image: url('/src/svg/dots.svg');">
+                    <a class="brand__link" href="index.php">hubble.</a>
                 </h1>
-                <a class="button button--big" href="recruiter">Recruiter</a>
+                <a class="button button--big button--purple--light" href="../index.php">Home</a>
             </header>
             <section class="intro">
                 <div class="intro__content">
-                    <h2 class="typo typo--h1">Space Jobs ?</h2>
+                    <h2 class="typo typo--h1">Recruiter ?</h2>
                     <p class="typo typo--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quisquam at quo sequi a optio voluptate non ratione omnis provident, maiores laboriosam suscipit velit culpa explicabo sapiente! Blanditiis, similique, animi.</p>
                     <div class="intro__buttons">
-                        <a class="button button--big button--dark button--shadow margin-right" href="research">Job offers</a>
-                        <a class="button button--big button--dark button--shadow" href="research">Companies</a>
+                        <a class="button button--big button--shadow margin-right button--purple--light" href="recruiter/signup.php">Sign up</a>
+                        <a class="button button--big button--shadow button--purple--light" href="recruiter/signin.php">Sign in</a>
                     </div>
                 </div>
                 <img class="illustration" src="src/images/illustration.png" alt="Space Jobs Illustration">

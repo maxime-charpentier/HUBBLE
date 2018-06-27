@@ -13,7 +13,7 @@
         <div class="wrapper wrapper--background" style="background-image: url('src/svg/background.svg');">
             <header class="header">
                 <h1 class="brand z-index" style="background-image: url('src/svg/dots.svg');">
-                    <a class="brand__link" href="index.html">hubble.</a>
+                    <a class="brand__link" href="index.php">hubble.</a>
                 </h1>
                 <div class="header__buttons">
                     <button class="button button--medium" id="skip-button">Skip</button>
@@ -301,10 +301,10 @@
         <form class="form" id="register" action="" method="post" role="form">
             <input name="category" value="jobs" id="jobs" form="register" type="checkbox">
             <input name="category" value="companies" id="companies" form="register" type="checkbox">
-            <input name="category" value="profession" id="profession" xform="register" type="checkbox">
+            <input name="category" value="profession" id="profession" form="register" type="checkbox">
             <input name="duration" value="6 months" id="jobs" form="register" type="checkbox">
             <input name="duration" value="1 year" id="companies" form="register" type="checkbox">
-            <input name="duration" value="+1 year" id="profession" xform="register" type="checkbox">
+            <input name="duration" value="+1 year" id="profession" form="register" type="checkbox">
         </form>
         <script src="dist/app.js"></script>
     </body>
