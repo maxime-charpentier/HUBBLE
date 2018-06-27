@@ -47,12 +47,21 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
     color: $blueDark;
+}
+.interview__text--br {
+    display: none;
+    @include bp(tablet) {
+        display: block;
+    }
+}
+#interview-2 .interview__text {
+    text-align: left;
 }
 #interview-win .interview__text,
 #interview-fail .interview__text {
     margin-bottom: 24px;
-    text-align: center;
 }
 #interview-0 .interview__text {
     margin-top: 32px;
@@ -127,12 +136,13 @@
 }
 .interview__message {
     width: max-content;
+    max-width: 100%;
     margin: 0px 0px 18px 0px;
     padding: 12px 16px;
     font-weight: 300;
     font-size: 14px;
     color: $white;
-    border-radius: 100px;
+    border-radius: 20px;
 }
 .interview__message--ia {
     background-color: $blueMedium;

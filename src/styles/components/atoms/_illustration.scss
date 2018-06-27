@@ -7,7 +7,17 @@
         height: 38vw;
     }
     @media (min-width: 1248px) {
-        height: 42vw;
         margin-right: 80px;
+    }
+}
+.illustration--blue {
+    display: none;
+    @include bp(desktop) {
+        display: block;
+        width: auto;
+        height: 46vw;
+    }
+    @media (min-width: 1248px) {
+        margin-right: 120px;
     }
 }

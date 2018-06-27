@@ -20,6 +20,9 @@
         border-radius: 25px;
     }
 }
+.article--recruiter {
+    background-color: $whitePurple;
+}
 .article--hidden {
     transform: scale(0);
 }
@@ -31,16 +34,6 @@
         position: relative;
         width: 70%;
         overflow: hidden;
-    }
-}
-.article__image--desktop {
-    display: none;
-    @include bp(desktop) {
-        display: block;
-        width: 30%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 0px 25px 25px 0px;
     }
 }
 .article__header {
@@ -66,6 +59,51 @@
         display: none;
     }
 }
+.article__image--desktop {
+    display: none;
+    @include bp(desktop) {
+        display: block;
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0px 25px 25px 0px;
+    }
+}
+.article__placeholder {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #D5D5D5;
+    @include bp(desktop) {
+        display: none;
+    }
+}
+.article__placeholder--desktop {
+    display: none;
+    @include bp(desktop) {
+        display: block;
+        width: 30%;
+        height: 100%;
+        padding: 0px;
+        border: none;
+        border-radius: 0px 25px 25px 0px;
+        outline: none;
+        cursor: pointer;
+        background-color: #D5D5D5;
+    }
+}
 .article__heading {
     position: absolute;
     width: 100%;
@@ -87,6 +125,14 @@
     @include bp(desktop) {
         color: $blueDark;
     }
+    &--upload {
+        color: $black;
+    }
+    &--recruiter {
+        @include bp(desktop) {
+            color: $black;
+        }
+    }
 }
 .article__title {
     margin: 8px 0px 0px 0px;
@@ -95,6 +141,14 @@
     color: $white;
     @include bp(desktop) {
         color: $blueDark;
+    }
+    &--upload {
+        color: $black;
+    }
+    &--recruiter {
+        @include bp(desktop) {
+            color: $purpleDark;
+        }
     }
 }
 .article__content {
@@ -123,6 +177,9 @@
     font-size: 20px;
     font-weight: 500;
     color: $blueDark;
+    &--recruiter {
+        color: $purpleDark;
+    }
 }
 .article__text {
     margin: 0px;
@@ -142,16 +199,17 @@
         bottom: 0px;
         z-index: 1;
         width: 100%;
-        background-color: $whiteMedium;
         border-radius: 0px 0px 0px 25px;
     }
 }
-
 .button--article {
     position: absolute;
     top: 32px;
     right: 16px;
     flex-direction: column;
+    &--recruiter {
+        background-color: $purpleDark;
+    }
 }
 .button--article::before {
     width: 20px;

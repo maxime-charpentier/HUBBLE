@@ -1,23 +1,24 @@
-require('svg4everybody')({ polyfill: true });
+/***
+VARIABLES
+ ***/
 
-/*
-Variables
- */
-
+// UI
 var main = document.querySelector('.main');
 var modalsContainer = document.querySelector('.modals');
 var modals = document.querySelectorAll('.modal');
 var postsContainer = document.querySelector('.posts');
 var posts = document.querySelectorAll('.post');
+
+// CODE
 var counter = 0;
 var touchstartX = 0;
 var touchendX = 0;
 
-/*
-Functions
- */
+/***
+FUNCTIONS
+ ***/
 
-// Disable possibilty to scroll or swipe on slider for x time
+// DISABLE POSSIBILITY TO SWIPE / SCROLL FOR X AMOUNT OF TIME
 function throttle (callback, limit) {
   var wait = false;
   return function (event) {
@@ -31,7 +32,7 @@ function throttle (callback, limit) {
   }
 }
 
-// Handle swipe gesture
+// HANDLE SWIPE GESTURE
 function handleSwipe(element) {
     if (touchendX < touchstartX) {
         counter++;
@@ -45,11 +46,12 @@ function handleSwipe(element) {
     }
 }
 
-/*
-(Slider) Switch slide on swipe
- */
+/***
+SWIPE
+ ***/
 
-// Posts
+// SWIPE POSTS
+
 postsContainer.addEventListener('touchstart', throttle(function(event) {
     var windowWidth = document.body.clientWidth;
     if (window.innerWidth < 576) {
@@ -66,7 +68,8 @@ postsContainer.addEventListener('touchend', throttle(function(event) {
     }
 }, 1000, false));
 
-// Filters
+// SWIPE FILTERS MODALS
+
 modalsContainer.addEventListener('touchstart', throttle(function(event) {
     var windowWidth = document.body.clientWidth;
     if (window.innerWidth < 960) {
@@ -83,9 +86,9 @@ modalsContainer.addEventListener('touchend', throttle(function(event) {
     }
 }, 1000, false));
 
-/*
-(Slider) Switch slide on scroll (to experience mobile slider on desktop)
- */
+/***
+SCROLL (EXPERIENCE MOBILE NAVIGATION SWIPE ON DESKTOP)
+ ***/
 
 window.addEventListener('wheel', throttle(function(e) {
     var windowWidth = document.body.clientWidth;
@@ -97,52 +100,44 @@ window.addEventListener('wheel', throttle(function(e) {
         }
         if (e.deltaY > 0) {
             counter++;
-            if (postsContainer.classList.contains('.posts--hidden')) {
+            if (main.classList.contains('.main--hidden')) {
                 if (counter >= modals.length - 1)
-                counter = modals.length - 1;
-            } else {
-                if (counter >= posts.length - 1)
-                counter = posts.length - 1;
+                    counter = modals.length - 1;
+            } else if (modalsContainer.classList.contains('.modals--hidden')) {
+                if (counter >= posts.length - 1) {
+                    counter = posts.length - 1;
+                }
             }
         }
-        postsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth - 55) + 'px)';
         modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth - 55) + 'px)';
+        postsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth - 55) + 'px)';
     }
 }, 1500));
 
-/*
-Allow to slide the modals when clicking on the skip button
- */
+/***
+SKIP BUTTON : HIDE FILTERS MODALS AND SHOW THE POSTS ON CLICK
+ ***/
 
 var skipButton = document.querySelector('#skip-button');
 
 skipButton.addEventListener('click', function() {
-    var windowWidth = document.body.clientWidth;
-    counter++;
-    if (counter >= modals.length) {
-        counter = 0;
-        setTimeout(function() {
-            skipButton.classList.add('button--fade');
-            modalsContainer.classList.add('modals--fade');
-        }, 400);
-        setTimeout(function() {
-            skipButton.classList.add('button--hidden');
-            modalsContainer.classList.add('modals--hidden');
-            main.classList.remove('main--hidden');
-            showHeaderButtons()
-        }, 800);
-        return;
-    }
-    if (window.innerWidth < 576) {
-        modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth - 55) + 'px)';
-    } else {
-        modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth + 18) + 'px)';
-    }
+    counter = 0;
+    setTimeout(function() {
+        skipButton.classList.add('button--fade');
+        modalsContainer.classList.add('modals--fade');
+    }, 400);
+    setTimeout(function() {
+        skipButton.classList.add('button--hidden');
+        modalsContainer.style.marginLeft = '0px';
+        modalsContainer.classList.add('modals--hidden');
+        main.classList.remove('main--hidden');
+        showHeaderButtons()
+    }, 800);
 });
 
-/*
-Burger Menu
- */
+/***
+OPEN & CLOSE BURGER MENU ON CLICK
+ ***/
 
 var menu = document.querySelector('.menu');
 var menuButton = document.querySelector('.button--burger');
@@ -167,15 +162,16 @@ menuButton.addEventListener('click', function () {
 });
 
 
-/*
-Filters
- */
+/***
+FILTERS
+ ***/
 
 var filters0 = document.querySelectorAll('.filter--0');
 var filters1 = document.querySelectorAll('.filter--1');
 var filters2 = document.querySelectorAll('.filter--2');
 var body = document.querySelector(body);
 
+// FILTERS MODAL #1
 for (let a = 0; a < filters0.length; a++) {
     filters0[a].addEventListener('click', function() {
         for (var i = 0; i < filters0.length; i++) {
@@ -195,6 +191,7 @@ for (let a = 0; a < filters0.length; a++) {
     });
 }
 
+// FILTERS MODAL #2
 for (let a = 0; a < filters1.length; a++) {
     filters1[a].addEventListener('click', function() {
         for (var i = 0; i < filters1.length; i++) {
@@ -214,6 +211,7 @@ for (let a = 0; a < filters1.length; a++) {
     });
 }
 
+// FILTERS MODAL #3
 for (let a = 0; a < filters2.length; a++) {
     filters2[a].addEventListener('click', function() {
         for (var i = 0; i < filters2.length; i++) {
@@ -239,22 +237,13 @@ for (let a = 0; a < filters2.length; a++) {
     });
 }
 
-/*
-Open article modal when clicking on thumbnail
- */
+/***
+OPEN & CLOSE ARTICLE MODAL ON CLICK
+ ***/
 
 var article = document.querySelector('.article');
 var articleButton = document.querySelector('.button--article');
 
-for (var i = 0; i < posts.length; i++) {
-    posts[i].addEventListener('click', function() {
-        article.classList.remove('article--hidden');
-        overlay.classList.add('overlay--active');
-        setTimeout(function() {
-            overlay.classList.add('overlay--fade');
-        }, 10);
-    });
-}
 articleButton.addEventListener('click', function() {
     article.classList.add('article--hidden');
     overlay.classList.remove('overlay--fade');
@@ -262,9 +251,10 @@ articleButton.addEventListener('click', function() {
         overlay.classList.remove('overlay--active');
     }, 300);
 });
-/*
-Show headers buttons after completing filters
- */
+
+/***
+SHOW HEADERS BUTTONS AFTER SUBMITTING FILTERS
+ ***/
 
 var searchButton = document.querySelector('#button-search');
 var filtersButton = document.querySelector('#button-filters');
@@ -272,7 +262,7 @@ var recruitersButton = document.querySelector('#button-recruiters');
 
 
 
-function showHeaderButtons() {
+function showHeaderButtons(button1, button2, button3) {
     searchButton.classList.remove('button--hidden');
     if (window.innerWidth < 960) {
         menuButton.classList.remove('button--hidden');
@@ -284,9 +274,9 @@ function showHeaderButtons() {
     }
 }
 
-/*
-Posts bullets active on click
- */
+/***
+POSTS BULLETS ACTIVE ON CLICK
+ ***/
 
 var bullets = document.querySelectorAll('.bullet');
 
@@ -302,9 +292,9 @@ for (let a = 0; a < bullets.length; a++) {
     });
 }
 
-/*
-Interview
- */
+/***
+INTERVIEW
+ ***/
 
 var applyButton = document.querySelector('#button-apply');
 var interviewsContainer = document.querySelector('.interviews');
@@ -364,80 +354,95 @@ startButton.addEventListener('click', function() {
 });
 
 
-/**
- * AJAX EXXAMPLE
- */
+/***
+AJAX REQUEST FOR GENERATING POSTS
+ ***/
 
-/*try {
+try {
     window.$ = window.jQuery = require('jquery');
-    var posts = [];
+    var dataPosts = [];
 
-    $.get('http://api.wearehubble.test', function (data) {
-        console.log(data);
-    });*/
+    $('.filter--2').click(function () {
+        fetchDataPosts();
+    });
+    $('#skip-button').click(function () {
+        fetchDataPosts();
+    });
 
-    /*
-    $('.button').submit(function () {
-        $.get('https://wearehubble.test/assets/api.php', $('.form').serialize(), function (data) {
-            posts = data;
-            if ($(window).width() > 576) {
-                appendPosts(6);
-                // Generate the bullets
-            } else if ($(window).width() > 960) {
-                appendPosts(9);
-                // Generate the bullets
+    function fetchDataPosts() {
+        console.log($('#register').serialize());
+        $.getJSON('http://api.wearehubble.test', $('#register').serialize(), function (data) {
+            dataPosts = data;
+            if ($(window).width() > 960) {
+                let limit = 9;
+                let offset = 0;
+                appendPosts(limit);
+                for (var i = 0; i < dataPosts.length / limit; i++) {
+                    $('.bullets').append(`<span class="bullet" data-offset="${offset}" data-limit="${limit}"></span>`);
+                    offset += limit;
+                }
+                $('.bullet:first-child').addClass('bullet--active');
+            } else if ($(window).width() > 576) {
+                let limit = 6;
+                let offset = 0;
+                appendPosts(limit);
+                for (var i = 0; i < dataPosts.length / limit; i++) {
+                    $('.bullets').append(`<span class="bullet" data-offset="${offset}" data-limit="${limit}"></span>`);
+                    offset += limit;
+                }
+                $('.bullet:first-child').addClass('bullet--active');
             } else {
-                appendPosts(posts.length);
+                appendPosts(dataPosts.length);
             }
         });
-    });
-    */
+    }
 
- /*   function appendPosts(limit) {
+    function appendPosts(limit) {
         for (var i = 0; i < limit; i++) {
-            $('.posts').append(`<article class="post post--${i}" data-id="${i}">
-                <h1>${posts[i].title}</h1>
-                ${posts[i].content}
-            </article>`);
+            $('.posts').append(`<div class="post post--${i}" data-id="${i}">
+                <img class="post__thumbnail" src="${dataPosts[i].image.src}" alt="${dataPosts[i].image.alt}">
+                <div class="post__content">
+                    <span class="post__label">${dataPosts[i].label}</span>
+                    <h2 class="post__title">${dataPosts[i].title}</h2>
+                </div>
+            </div>`);
         }
     }
 
-    $('.bullet').click(function () {
+    $('body').on('click', '.bullet', function () {
         var offset = $(this).data('offset');
         var limit = $(this).data('limit');
         var count = limit;
 
         for (var i = offset; i < (offset + limit); i++) {
-            $('#post' + count + ' .post__title').text(posts[count].title);
+            $('#post' + count + ' .post__title').text(dataPosts[count].title);
             count--;
         }
+
+        $('.bullet').each(function () {
+            $(this).removeClass('bullet--active');
+        });
+        $(this).addClass('bullet--active');
     });
 
-    $('.post').click(function () {
-        var post = posts[$(this).data('id')];
+    $('body').on('click', '.post', function () {
+        var post = dataPosts[$(this).data('id')];
 
-        $('.article__title').text(post.title);
-        $('.article__label').text(post.label);
-        $('.article__text--term').text(post.term);
+        $('.article__label').html(post.label);
+        $('.article__title').html(post.title);
+        $('.article__image').attr('src', post.image.src);
+        $('.article__image').attr('alt', post.image.alt);
+        $('.article__image--desktop').attr('src', post.image.src);
+        $('.article__image--desktop').attr('alt', post.image.alt);
+        $('.article__item--term .article__text').html(post.term);
+        $('.article__item--location .article__text').html(post.location);
+        $('.article__item--salary .article__text').html(post.salary);
+        $('.article__item--description .article__text').html(post.description);
+
+        $('.article').removeClass('article--hidden');
+        $('.overlay').addClass('overlay--active');
+        setTimeout(function() {
+            $('.overlay').addClass('overlay--fade');
+        }, 10);
     });
-} catch (e) {}*/
-
-/****************
-
-Recruiters
-
- ****************/
-
-/*
-var dashboardButton document.querySelector('.profil__button')
-
-dashboardButton.addEventListener('click', function() {
-    setTimeout(function() {
-        interviewsContainer.classList.add('profil--fade');
-    }, 400);
-    setTimeout(function() {
-        interviewsContainer.classList.add('profil--hidden');
-        main.classList.remove('dashboard--hidden');
-    }, 800);
-});
-*/
+} catch (e) {}

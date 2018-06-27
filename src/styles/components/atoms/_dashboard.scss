@@ -19,7 +19,7 @@
     align-items: center;
     height: 75%;
     @include bp(desktop) {
-        height: 50%;
+        height: 60%;
     }
 }
 .dashboard__image {
@@ -73,7 +73,7 @@
     grid-column: 2 / 2;
 }
 .dashboard__label {
-    margin: 0px 0px 16px 0px;
+    margin: 0px 0px 4px 0px;
     font-size: 15px;
     font-weight: 500;
     color: $white;
@@ -81,7 +81,7 @@
 .dashboard__text {
     margin: 0px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     color: $white;
 }
 .dashboard__buttons {
@@ -115,7 +115,4 @@
         height: 48px;
         font-size: 17px;
     }
-}
-.dashboard__button:first-child {
-    margin-right: 12px;
 }

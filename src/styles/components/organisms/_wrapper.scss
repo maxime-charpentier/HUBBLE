@@ -6,9 +6,16 @@
     overflow: hidden;
     &--background {
         @include bp(tablet) {
-            background-position: center;
+            background-position: top 100px left 50px;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+    }
+    &--background--cercles {
+        @include bp(desktop) {
+            background-position: right 0px top 0px;
+            background-repeat: no-repeat;
+            background-size: 60%;
         }
     }
 }

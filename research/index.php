@@ -27,7 +27,7 @@
                     </div>
                     <button id="button-burger" class="button button--burger button--small z-index button--hidden"></button>
                     <button id="button-filters" class="button button--big button--hidden">Filters</button>
-                    <a id="button-recruiters" class="button button--big" href="../recruiter">Recruiter</a>
+                    <a id="button-recruiters" class="button button--big" href="../recruiter">Recruiters</a>
                 </div>
             </header>
             <section class="modals">
@@ -47,7 +47,7 @@
                                     <label class="filter filter--big filter--0" for="jobs">Machine & Maintenance</label>
                                 </div>
                                 <div class="filters__container">
-                                    <label class="filter filter--big filter--0" for="jobs">Digital & Communication</label>
+                                    <label class="filter filter--big filter--0" for="jobs">Energy & Transport</label>
                                     <label class="filter filter--small filter--0" for="jobs">Food</label>
                                 </div>
                                 <div class="filters__container">
@@ -73,9 +73,9 @@
                             <p class="modal__feedback">Copy that !</p>
                             <p class="modal__question">How long do you want to stay ?</p>
                             <div class="filters">
-                                <label class="filter filter--1" for="jobs">6 mounths</label>
-                                <label class="filter filter--1" for="jobs">1 year</label>
-                                <label class="filter filter--1" for="jobs">+1 year</label>
+                                <label class="filter filter--1" for="jobs">6 Months</label>
+                                <label class="filter filter--1" for="jobs">1 Year</label>
+                                <label class="filter filter--1" for="jobs">+1 Year</label>
                             </div>
                         </div>
                         <div class="modal__footer">
@@ -95,20 +95,20 @@
                             <p class="modal__question">Tell me where ?</p>
                             <div class="filters">
                                 <div class="filters__container">
-                                    <label class="filter filter--2" for="jobs">Mars</label>
-                                    <label class="filter filter--2" for="jobs">Mercury</label>
+                                    <label class="filter filter--2" for="tatooine">Tatooine</label>
+                                    <label class="filter filter--2" for="neptune">Neptune</label>
                                 </div>
                                 <div class="filters__container">
-                                    <label class="filter filter--2" for="jobs">Resistance</label>
-                                    <label class="filter filter--2" for="jobs">Venus</label>
+                                    <label class="filter filter--2" for="nibiru">Nibiru</label>
+                                    <label class="filter filter--2" for="mongo">Mongo</label>
                                 </div>
                                 <div class="filters__container">
-                                    <label class="filter filter--2" for="jobs">Midria</label>
-                                    <label class="filter filter--2" for="jobs">Saturn</label>
+                                    <label class="filter filter--2" for="moon">Moon</label>
+                                    <label class="filter filter--2" for="omega">Omega</label>
                                 </div>
                                 <div class="filters__container">
-                                    <label class="filter filter--2" for="jobs">Uranus</label>
-                                    <label class="filter filter--2" for="jobs">Jupiter</label>
+                                    <label class="filter filter--2" for="pandora">Pandora</label>
+                                    <label class="filter filter--2" for="orilla">Orilla</label>
                                 </div>
                             </div>
                         </div>
@@ -124,85 +124,15 @@
             </section>
             <main class="main main--hidden">
                 <section class="posts">
-                    <div class="post">
-                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
-                        <div class="post__content">
-                            <span class="post__label">Business</span>
-                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
-                        <div class="post__content">
-                            <span class="post__label">Business</span>
-                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
-                        <div class="post__content">
-                            <span class="post__label">Business</span>
-                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
-                        </div>
-                    </div>
-                    <div class="post" data-id="1088">
-                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
-                        <div class="post__content">
-                            <span class="post__label">Business</span>
-                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
-                        <div class="post__content">
-                            <span class="post__label">Business</span>
-                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
-                        <div class="post__content">
-                            <span class="post__label">Business</span>
-                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
-                        <div class="post__content">
-                            <span class="post__label">Business</span>
-                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
-                        <div class="post__content">
-                            <span class="post__label">Business</span>
-                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <img class="post__thumbnail" src="src/images/1.jpg" alt="Job Image">
-                        <div class="post__content">
-                            <span class="post__label">Business</span>
-                            <h2 class="post__title">Corporate<br>Disorganizer</h2>
-                        </div>
-                    </div>
                 </section>
                 <div class="bullets">
-                    <button class="bullet bullet--active"></button>
-                    <button class="bullet"></button>
-                    <button class="bullet"></button>
-                    <button class="bullet"></button>
-                    <button class="bullet"></button>
-                    <button class="bullet"></button>
                 </div>
             </main>
             <div class="interviews interviews--hidden">
                 <div class="interview__wrapper">
                     <div class="interview interview--active" id="interview-0">
                         <h3 class="interview__title">The Pre Interview</h3>
-                        <h4 class="interview__title interview__title--light">Blue Agency</h4>
-                        <p class="interview__text">So you want to work at Ueno?  It's not complicated. Just walk the walk. Talk the talk. Through and No big deal Space & Jobs.</p>
+                        <p class="interview__text">So you want to work at <span class="interview__text--bold">General Electric</span> on <span class="interview__text--bold">Mongo Planet</span>? It’s not complicated. Just Talk the talk, there’s no big deal.</p>
                         <button class="interview__touch">
                             <img class="interview__icon" src="src/svg/touch.svg" alt="Digital detection">
                         </button>
@@ -211,9 +141,9 @@
                 <div class="interview__wrapper">
                     <div class="interview" id="interview-1">
                         <img class="interview__profil" src="src/images/profil.jpg" alt="Profil picture">
-                        <h3 class="interview__title">Hello, <span class="interview__title interview__title--light">Clark Griffin</span></h3>
-                        <h4 class="interview__text">Corporate Designer</h4>
-                        <button class="interview__button" id="interview-start">Start the interview</button>
+                        <h3 class="interview__title">Hello, <span class="interview__title interview__title--light">Jay Dogo</span></h3>
+                        <h4 class="interview__text">Applying for <span class="interview__text--bold">Zero G Mechanics</span></h4>
+                        <button class="interview__button" id="interview-start">Take the interview</button>
                     </div>
                 </div>
                 <div class="interview__wrapper">
@@ -223,34 +153,34 @@
                             <p class="interview__text interview__text--bold">Najla Dyala Operations</p>
                         </div>
                         <div class="interview__messages">
-                            <p class="interview__message interview__message--ia">Hey, I’m Najla! I’m a People Operations</p>
-                            <p class="interview__message interview__message--user">Um, why do I look like a hot dog?</p>
-                            <p class="interview__message interview__message--ia">Cool! Sounds like you’re a perfect fit</p>
-                            <p class="interview__message interview__message--ia">I’d like to add you on LinkedIn.</p>
-                            <p class="interview__message interview__message--user">I’m ready let’s go</p>
+                            <p class="interview__message interview__message--ia">Hey, I’m Najla! I’m a People Operations Generalist.</p>
+                            <p class="interview__message interview__message--user">Hey Najla, I’m Joe, nice to meet you!</p>
+                            <p class="interview__message interview__message--ia">Likewise! You’re here for the interview?</p>
+                            <p class="interview__message interview__message--user">Yes, absolutely. I’ve been preparing for this moment all my life. I’m obsessive like that. Plus I’m super nervous.</p>
+                            <p class="interview__message interview__message--ia">Cool! Sounds like you’re a perfect fit!</p>
                         </div>
                         <div class="interview__footer">
-                            <button class="interview__button">Let's connect</button>
-                            <button class="interview__button">Can I hug you ?</button>
+                            <button class="interview__button">Yawn...</button>
+                            <button class="interview__button">Excited</button>
                         </div>
                     </div>
                 </div>
                 <div class="interview__wrapper">
-                    <div class="interview interview--hidden" id="interview-win">
+                    <div class="interview" id="interview-win">
                         <div class="interview__container">
-                            <p class="interview__title">Well Done !</p>
-                            <p class="interview__text">You just pass the pre-interview with our AI Bot. Please take a holo appointment for the final interview</p>
-                            <p class="interview__text">Team, <span class="interview__text interview__text--bold">BlueAgency</span></p>
+                            <p class="interview__title">Well Done ! 🎉</p>
+                            <p class="interview__text">You just pass the pre-interview with our Bot. <br class="interview__text--br">Please take a holo appointment for the final interview.</p>
+                            <p class="interview__text">The <span class="interview__text interview__text--bold">General Electrics</span>, Team</p>
                         </div>
-                        <button class="interview__button">Next Step</button>
+                        <button class="interview__button">Job Offers</button>
                     </div>
                 </div>
                 <div class="interview__wrapper">
-                    <div class="interview interview--hidden" id="interview-fail">
+                    <div class="interview" id="interview-fail">
                         <div class="interview__container">
-                            <p class="interview__title">Oh no !</p>
-                            <p class="interview__text">I’m sure you are lifted for another job. Please check out our other offerts, keep going !</p>
-                            <p class="interview__text">Team, BlueAgency</p>
+                            <p class="interview__title">Oh No ! 😕</p>
+                            <p class="interview__text">I’m sure you are fitted for another job. <br class="interview__text--br">Please check out our other offers, keep going !</p>
+                            <p class="interview__text">The <span class="interview__text interview__text--bold">General Electrics</span>, Team</p>
                         </div>
                         <button class="interview__button">Job Offers</button>
                     </div>
@@ -261,30 +191,29 @@
             <button class="button button--small button--article z-index"></button>
             <div class="article__container">
                 <header class="article__header">
-                    <img class="article__image" src="src/images/1.jpg" alt="Job Image">
+                    <img class="article__image" src="" alt="">
                     <div class="article__heading">
-                        <span class="article__label">Business</span>
-                        <h3 class="article__title">Corporate<br>Disorganizer</h3>
+                        <span class="article__label"></span>
+                        <h3 class="article__title"></h3>
                     </div>
                 </header>
                 <main class="article__content">
                     <ul class="article__items">
-                        <li class="article__item">
-                            <h4 class="article__category article__category--term">Term</h4>
-                            <p class="article__text article__text--term">1 year mission</p>
+                        <li class="article__item article__item--term">
+                            <h4 class="article__category">Term</h4>
+                            <p class="article__text"></p>
                         </li>
-                        <li class="article__item">
+                        <li class="article__item article__item--location">
                             <h4 class="article__category">Location</h4>
-                            <p class="article__text">Lunar Spaceship, Venus</p>
-                            <p class="article__text">Right Ascension: 08h 37m</p>
+                            <p class="article__text"></p>
                         </li>
-                        <li class="article__item">
+                        <li class="article__item article__item--salary">
                             <h4 class="article__category">Salary</h4>
-                            <p class="article__text">40k ES / Year</p>
+                            <p class="article__text"></p>
                         </li>
-                        <li class="article__item">
+                        <li class="article__item article__item--description">
                             <h4 class="article__category">Description</h4>
-                            <p class="article__text">The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common</p>
+                            <p class="article__text"></p>
                         </li>
                     </ul>
                 </main>
@@ -296,15 +225,24 @@
         </article>
         <nav class="menu">
             <button class="button button--big margin-top margin-bottom">Filters</button>
-            <a class="button button--big" href="../recruiter">Recruiter</a>
+            <a class="button button--big" href="../recruiter">Recruiters</a>
         </nav>
         <form class="form" id="register" action="" method="post" role="form">
-            <input name="category" value="jobs" id="jobs" form="register" type="checkbox">
-            <input name="category" value="companies" id="companies" form="register" type="checkbox">
-            <input name="category" value="profession" id="profession" form="register" type="checkbox">
-            <input name="duration" value="6 months" id="jobs" form="register" type="checkbox">
-            <input name="duration" value="1 year" id="companies" form="register" type="checkbox">
-            <input name="duration" value="+1 year" id="profession" form="register" type="checkbox">
+            <input name="category" value="jobs" id="jobs" type="radio">
+            <input name="category" value="companies" id="companies" type="radio">
+            <input name="category" value="profession" id="profession" type="radio">
+            <input name="duration" value="6 months" id="jobs" type="radio">
+            <input name="duration" value="1 year" id="companies" type="radio">
+            <input name="duration" value="+1 year" id="profession" type="radio">
+
+            <input name="location" value="tatooine" id="tatooine" type="radio">
+            <input name="location" value="neptune" id="neptune" type="radio">
+            <input name="location" value="nibiru" id="nibiru" type="radio">
+            <input name="location" value="mongo" id="mongo" type="radio">
+            <input name="location" value="moon" id="moon" type="radio">
+            <input name="location" value="omega" id="omega" type="radio">
+            <input name="location" value="pandora" id="pandora" type="radio">
+            <input name="location" value="orilla" id="orilla" type="radio">
         </form>
         <script src="dist/app.js"></script>
     </body>

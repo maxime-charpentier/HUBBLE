@@ -14,18 +14,18 @@
                 <h1 class="brand" style="background-image: url('/src/svg/dots.svg');">
                     <a class="brand__link" href="index.php">hubble.</a>
                 </h1>
-                <a class="button button--big button--purple--light" href="../index.php">Home</a>
+                <a class="button button--big button--purple--light" href="../index.php">Job Offers</a>
             </header>
             <section class="intro">
                 <div class="intro__content">
-                    <h2 class="typo typo--h1">Recruiter ?</h2>
-                    <p class="typo typo--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quisquam at quo sequi a optio voluptate non ratione omnis provident, maiores laboriosam suscipit velit culpa explicabo sapiente! Blanditiis, similique, animi.</p>
+                    <h2 class="typo typo--h1">Recruiters</h2>
+                    <p class="typo typo--text">We help companies develop their employer brand. Our mission ? Create the meeting between companies and young talents, thanks to a mix of content and technology.</p>
                     <div class="intro__buttons">
                         <a class="button button--big button--shadow margin-right button--purple--light" href="recruiter/signup.php">Sign up</a>
                         <a class="button button--big button--shadow button--purple--light" href="recruiter/signin.php">Sign in</a>
                     </div>
                 </div>
-                <img class="illustration" src="src/images/illustration.png" alt="Space Jobs Illustration">
+                <img class="illustration" src="src/svg/illustration-purple.svg" alt="Space Jobs Illustration">
             </section>
             <footer class="footer">
                 <p class="copyright"><span class="copyright__symbol">© </span><span class="copyright__adding">Copyright</span> Hubble 2480</p>
