@@ -27,6 +27,6 @@
                 </div>
             </section>
         </div>
-        <script src="dist/app.js"></script>
+        <script src="/dist/app.js"></script>
     </body>
 </html>

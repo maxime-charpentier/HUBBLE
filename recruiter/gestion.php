@@ -209,6 +209,6 @@
                 <img class="article__icon" src="../src/svg/image-upload.svg" alt="Image upload icon">
             </button>
         </article>
-        <script src="dist/app.js"></script>
+        <script src="/dist/recruiter.js"></script>
     </body>
 </html>

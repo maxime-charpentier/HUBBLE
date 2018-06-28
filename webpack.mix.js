@@ -24,6 +24,8 @@ mix.sass('src/styles/app.scss', 'dist');
 // Set the scripts src and sit folder path
 mix.js('src/scripts/app.js', 'dist');
 
+mix.js('src/scripts/recruiter.js', 'dist');
+
 // Enable the source maps
 mix.sourceMaps(true, 'cheap-source-map');
 

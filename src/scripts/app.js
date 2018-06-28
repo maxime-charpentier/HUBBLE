@@ -420,32 +420,12 @@ startButton.addEventListener('click', function() {
     interviewsContainer.style.marginLeft = '-' + (counter * windowWidth) + 'px';
 });
 
-/******************
-Recruiters
-******************/
-
-/***
-SHOW DASHBOARD & OFFERS ON CLICK ON DASHBOARD BUTTON
- ***/
-
-
-var dashboardButton = document.querySelector('#dashboard-button');
-var profilModal = document.querySelector('.profil');
-var gestion = document.querySelector('.gestion');
-
-dashboardButton.addEventListener('click', function() {
-    counter = 0;
-    profilModal.classList.add('profil--fadeout');
-    gestion.classList.remove('gestion--hidden');
-    setTimeout(function() {
-        gestion.classList.add('gestion--fadein');
-    }, 600);
-});
 
 
 /***
 AJAX REQUEST FOR GENERATING POSTS
  ***/
+
 var obreak = 0;
 try {
     window.$ = window.jQuery = require('jquery');
@@ -536,3 +516,5 @@ try {
         }, 10);
     });
 } catch (e) {}
+
+

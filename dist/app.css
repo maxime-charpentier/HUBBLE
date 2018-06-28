@@ -2102,6 +2102,8 @@ Burger Button
   height: calc(100vh - (43px + 67px + 43px));
   padding: 32px 0px 0px 0px;
   opacity: 0;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
 }
 
 .gestion--fadein {
