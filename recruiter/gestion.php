@@ -82,8 +82,8 @@
                             </div>
                         </div>
                         <div class="job__infos">
-                            <h4 class="job__title">Corporate<br>Disorganizer</h4>
-                            <span class="job__label">Business</span>
+                            <h4 class="job__title">Planet Weather<br>Manager</h4>
+                            <span class="job__label">Food & Environment</span>
                         </div>
                     </div>
                     <div class="job">
@@ -100,7 +100,7 @@
                             <span class="job__label">Business</span>
                         </div>
                     </div>
-                    <div class="job">
+                    <div class="job job--hidden" id="job-target">
                         <div class="job__buttons">
                             <div class="job__button job__button--edit">
                                 <img class="job__icon" src="../src/svg/edit.svg" alt="Edit icon">
