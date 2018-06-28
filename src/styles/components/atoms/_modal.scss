@@ -128,9 +128,21 @@
     background: transparent;
     border: 1px solid $blueDark;
     border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+    @include bp(desktop) {
+        width: 13px;
+        height: 13px;
+    }
 }
 .modal__bullet:not(:last-child) {
     margin-right: 4px;
+    @include bp(desktop) {
+        margin-right: 6px;
+    }
+}
+.modal__bullet:hover {
+    background-color: $blueDark;
 }
 .modal__bullet--active {
     background-color: $blueDark;

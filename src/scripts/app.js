@@ -127,6 +127,7 @@ skipButton.addEventListener('click', function() {
         modalsContainer.classList.add('modals--fade');
     }, 400);
     setTimeout(function() {
+        modalsContainer.style.marginLeft = '0px';
         skipButton.classList.add('button--hidden');
         modalsContainer.style.marginLeft = '0px';
         modalsContainer.classList.add('modals--hidden');
@@ -191,6 +192,20 @@ for (let a = 0; a < filters0.length; a++) {
     });
 }
 
+var modalBullets0 = document.querySelectorAll('.modal__bullet--0');
+
+for (var i = 0; i < modalBullets0.length; i++) {
+    modalBullets0[i].addEventListener('click', function() {
+        var windowWidth = document.body.clientWidth;
+        counter = 0;
+        if (window.innerWidth < 576) {
+            modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth - 55) + 'px)';
+        } else {
+            modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth + 18) + 'px)';
+        }
+    });
+}
+
 // FILTERS MODAL #2
 for (let a = 0; a < filters1.length; a++) {
     filters1[a].addEventListener('click', function() {
@@ -203,6 +218,20 @@ for (let a = 0; a < filters1.length; a++) {
         }
         var windowWidth = document.body.clientWidth;
         counter++;
+        if (window.innerWidth < 576) {
+            modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth - 55) + 'px)';
+        } else {
+            modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth + 18) + 'px)';
+        }
+    });
+}
+
+var modalBullets1 = document.querySelectorAll('.modal__bullet--1');
+
+for (var i = 0; i < modalBullets1.length; i++) {
+    modalBullets1[i].addEventListener('click', function() {
+        var windowWidth = document.body.clientWidth;
+        counter = 1;
         if (window.innerWidth < 576) {
             modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth - 55) + 'px)';
         } else {
@@ -229,6 +258,7 @@ for (let a = 0; a < filters2.length; a++) {
                 modalsContainer.classList.add('modals--fade');
             }, 400);
             setTimeout(function() {
+                modalsContainer.style.marginLeft = '0px';
                 skipButton.classList.add('button--hidden');
                 modalsContainer.classList.add('modals--hidden');
                 main.classList.remove('main--hidden');
@@ -236,6 +266,41 @@ for (let a = 0; a < filters2.length; a++) {
             }, 800);
     });
 }
+
+var modalBullets2 = document.querySelectorAll('.modal__bullet--2');
+
+for (var i = 0; i < modalBullets2.length; i++) {
+    modalBullets2[i].addEventListener('click', function() {
+        var windowWidth = document.body.clientWidth;
+        counter = 2;
+        if (window.innerWidth < 576) {
+            modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth - 55) + 'px)';
+        } else {
+            modalsContainer.style.marginLeft = 'calc(-' + counter * (windowWidth + 18) + 'px)';
+        }
+    });
+}
+
+/***
+SHOW FILTERS MODALS ON CLICK
+ ***/
+
+ var filtersButton = document.querySelector('#button-filters');
+
+filtersButton.addEventListener('click', function() {
+    counter = 0;
+    setTimeout(function() {
+        skipButton.classList.remove('button--hidden');
+        filtersButton.classList.add('button--hidden');
+        modalsContainer.classList.remove('modals--hidden');
+        main.classList.add('main--hidden');
+    }, 10);
+    setTimeout(function() {
+        postsContainer.style.marginLeft = '0px';
+        skipButton.classList.remove('button--fade');
+        modalsContainer.classList.remove('modals--fade');
+    }, 400);
+});
 
 /***
 OPEN & CLOSE ARTICLE MODAL ON CLICK
@@ -257,7 +322,6 @@ SHOW HEADERS BUTTONS AFTER SUBMITTING FILTERS
  ***/
 
 var searchButton = document.querySelector('#button-search');
-var filtersButton = document.querySelector('#button-filters');
 var recruitersButton = document.querySelector('#button-recruiters');
 
 
@@ -307,8 +371,10 @@ backButton.addEventListener('click', function() {
         interviewsContainer.classList.remove('interviews--fade');
     }, 400);
     setTimeout(function() {
+        interviewsContainer.style.marginLeft = '0px';
         interviewsContainer.classList.add('interviews--hidden');
         main.classList.remove('main--hidden');
+        filtersButton.classList.remove('button--hidden');
     }, 800);
 });
 
@@ -318,6 +384,7 @@ applyButton.addEventListener('click', function() {
     article.classList.add('article--hidden');
     overlay.classList.remove('overlay--active');
     interviewsContainer.classList.remove('interviews--hidden');
+    filtersButton.classList.add('button--hidden');
     backButton.classList.remove('button--hidden');
     setTimeout(function() {
         interviewsContainer.classList.add('interviews--fade');
@@ -357,7 +424,7 @@ startButton.addEventListener('click', function() {
 /***
 AJAX REQUEST FOR GENERATING POSTS
  ***/
-
+var obreak = 0;
 try {
     window.$ = window.jQuery = require('jquery');
     var dataPosts = [];
@@ -373,16 +440,17 @@ try {
         console.log($('#register').serialize());
         $.getJSON('http://api.wearehubble.test', $('#register').serialize(), function (data) {
             dataPosts = data;
-            if ($(window).width() > 960) {
+            if ($(window).width() > 960 && obreak === 0) {
                 let limit = 9;
                 let offset = 0;
+                obreak++;
                 appendPosts(limit);
                 for (var i = 0; i < dataPosts.length / limit; i++) {
                     $('.bullets').append(`<span class="bullet" data-offset="${offset}" data-limit="${limit}"></span>`);
                     offset += limit;
                 }
                 $('.bullet:first-child').addClass('bullet--active');
-            } else if ($(window).width() > 576) {
+            } else if ($(window).width() > 576 && obreak === 0) {
                 let limit = 6;
                 let offset = 0;
                 appendPosts(limit);
@@ -391,7 +459,7 @@ try {
                     offset += limit;
                 }
                 $('.bullet:first-child').addClass('bullet--active');
-            } else {
+            } else if (obreak === 0) {
                 appendPosts(dataPosts.length);
             }
         });
@@ -400,12 +468,12 @@ try {
     function appendPosts(limit) {
         for (var i = 0; i < limit; i++) {
             $('.posts').append(`<div class="post post--${i}" data-id="${i}">
-                <img class="post__thumbnail" src="${dataPosts[i].image.src}" alt="${dataPosts[i].image.alt}">
-                <div class="post__content">
-                    <span class="post__label">${dataPosts[i].label}</span>
-                    <h2 class="post__title">${dataPosts[i].title}</h2>
-                </div>
-            </div>`);
+            <img class="post__thumbnail" src="${dataPosts[i].image.src}" alt="${dataPosts[i].image.alt}">
+            <div class="post__content">
+                <span class="post__label">${dataPosts[i].label}</span>
+                <h2 class="post__title">${dataPosts[i].title}</h2>
+            </div>
+        </div>`);
         }
     }
 

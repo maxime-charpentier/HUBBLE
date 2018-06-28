@@ -12,9 +12,9 @@
         <div class="wrapper wrapper--purple wrapper--background" style="background-image: url('/src/svg/background.svg');">
             <header class="header">
                 <h1 class="brand" style="background-image: url('/src/svg/dots.svg');">
-                    <a class="brand__link" href="./../index.php">hubble.</a>
+                    <a class="brand__link" href="../recruiter">hubble.</a>
                 </h1>
-                <a class="button button--big button--purple--light" href="./../index.php">Home</a>
+                <a class="button button--big button--purple--light" href="./../index.php">Job Offers</a>
             </header>
             <section class="sign">
                 <div class="sign__modal">

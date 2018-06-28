@@ -59,9 +59,9 @@
                         </div>
                         <div class="modal__footer">
                             <div class="modal__bullets">
-                                <div class="modal__bullet modal__bullet--active"></div>
-                                <div class="modal__bullet"></div>
-                                <div class="modal__bullet"></div>
+                                <div class="modal__bullet modal__bullet--0 modal__bullet--active"></div>
+                                <div class="modal__bullet modal__bullet--1"></div>
+                                <div class="modal__bullet modal__bullet--2"></div>
                             </div>
                         </div>
                     </div>
@@ -80,9 +80,9 @@
                         </div>
                         <div class="modal__footer">
                             <div class="modal__bullets">
-                                <div class="modal__bullet"></div>
-                                <div class="modal__bullet modal__bullet--active"></div>
-                                <div class="modal__bullet"></div>
+                                <div class="modal__bullet modal__bullet--0"></div>
+                                <div class="modal__bullet modal__bullet--1 modal__bullet--active"></div>
+                                <div class="modal__bullet modal__bullet--2"></div>
                             </div>
                         </div>
                     </div>
@@ -114,9 +114,9 @@
                         </div>
                         <div class="modal__footer">
                             <div class="modal__bullets">
-                                <div class="modal__bullet"></div>
-                                <div class="modal__bullet"></div>
-                                <div class="modal__bullet modal__bullet--active"></div>
+                                <div class="modal__bullet modal__bullet--0"></div>
+                                <div class="modal__bullet modal__bullet--1"></div>
+                                <div class="modal__bullet modal__bullet--2 modal__bullet--active"></div>
                             </div>
                         </div>
                     </div>

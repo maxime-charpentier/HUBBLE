@@ -1422,10 +1422,30 @@ Burger Button
   background: transparent;
   border: 1px solid #39389F;
   border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+@media (min-width: 960px) {
+  .modal__bullet {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .modal__bullet:not(:last-child) {
   margin-right: 4px;
+}
+
+@media (min-width: 960px) {
+  .modal__bullet:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.modal__bullet:hover {
+  background-color: #39389F;
 }
 
 .modal__bullet--active {
