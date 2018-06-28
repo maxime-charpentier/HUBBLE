@@ -5,7 +5,7 @@
         <title>Hubble: Space Jobs</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
         <link rel="stylesheet" href="../dist/app.css">
     </head>
     <body class="body--recruiter body--background">
@@ -16,7 +16,7 @@
                 </h1>
                 <a class="button button--big button--purple--light button--shadow" href="./../index.php">Job Offers</a>
             </header>
-            <section class="profil profil--hidden">
+            <section class="profil">
                 <div class="profil__modal">
                     <img class="profil__image" src="../src/images/profil.jpg" alt="Company picture">
                     <h3 class="profil__title"><span class="profil__title--bold">Hello,</span> Uniliver</h3>
@@ -34,10 +34,10 @@
                             <img class="profil__icon" src="../src/svg/checked.svg" alt="Checked icon">
                         </li>
                     </ul>
-                    <button class="profil__button">Dashboard</button>
+                    <button class="profil__button" id="dashboard-button">Dashboard</button>
                 </div>
             </section>
-            <section class="gestion">
+            <section class="gestion gestion--hidden">
                 <div class="gestion__header">
                     <h3 class="gestion__title"><span class="gestion__title--bold">Hello,</span> Uniliver<br>Welcome to your Dashboard</h3>
                     <div class="gestion__buttons">

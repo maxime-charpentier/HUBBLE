@@ -1657,9 +1657,11 @@ Burger Button
           align-items: center;
   width: calc(100vw - 35px * 2);
   padding: 32px 0px 0px 0px;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
 }
 
-.profil--fade {
+.profil--fadeout {
   opacity: 0;
 }
 
@@ -2099,6 +2101,15 @@ Burger Button
   width: calc(100vw - (35px + 35px));
   height: calc(100vh - (43px + 67px + 43px));
   padding: 32px 0px 0px 0px;
+  opacity: 0;
+}
+
+.gestion--fadein {
+  opacity: 1;
+}
+
+.gestion--hidden {
+  display: none;
 }
 
 .gestion__header {

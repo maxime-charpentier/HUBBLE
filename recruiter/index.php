@@ -19,7 +19,7 @@
             <section class="intro">
                 <div class="intro__content">
                     <h2 class="typo typo--h1">Recruiters</h2>
-                    <p class="typo typo--text">We help companies develop their employer brand. Our mission ? Create the meeting between companies and young talents, thanks to a mix of content and technology.</p>
+                    <p class="typo typo--text">We help companies develop their employer brand. Our mission ? Create the meeting between companies and young talents,  thanks to a mix of content and technology.</p>
                     <div class="intro__buttons">
                         <a class="button button--big button--shadow margin-right button--purple--light" href="recruiter/signup.php">Sign up</a>
                         <a class="button button--big button--shadow button--purple--light" href="recruiter/signin.php">Sign in</a>

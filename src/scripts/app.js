@@ -13,7 +13,7 @@ var posts = document.querySelectorAll('.post');
 var counter = 0;
 var touchstartX = 0;
 var touchendX = 0;
-
+console.log('yo')
 /***
 FUNCTIONS
  ***/
@@ -420,6 +420,28 @@ startButton.addEventListener('click', function() {
     interviewsContainer.style.marginLeft = '-' + (counter * windowWidth) + 'px';
 });
 
+/******************
+Recruiters
+******************/
+
+/***
+SHOW DASHBOARD & OFFERS ON CLICK ON DASHBOARD BUTTON
+ ***/
+
+
+var dashboardButton = document.querySelector('#dashboard-button');
+var profilModal = document.querySelector('.profil');
+var gestion = document.querySelector('.gestion');
+
+dashboardButton.addEventListener('click', function() {
+    counter = 0;
+    profilModal.classList.add('profil--fadeout');
+    gestion.classList.remove('gestion--hidden');
+    setTimeout(function() {
+        gestion.classList.add('gestion--fadein');
+    }, 600);
+});
+
 
 /***
 AJAX REQUEST FOR GENERATING POSTS
@@ -438,7 +460,7 @@ try {
 
     function fetchDataPosts() {
         console.log($('#register').serialize());
-        $.getJSON('http://api.wearehubble.test', $('#register').serialize(), function (data) {
+        $.getJSON('http://wearehubble.test/api', $('#register').serialize(), function (data) {
             dataPosts = data;
             if ($(window).width() > 960 && obreak === 0) {
                 let limit = 9;
