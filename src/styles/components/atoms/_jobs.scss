@@ -13,6 +13,9 @@
         background-color: $whiteDark;
     }
 }
+.job--hidden {
+    display: none;
+}
 .gestion__container .job:nth-child(1) {
     @include bp(desktop) {
         grid-row: 1 / 1;

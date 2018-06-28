@@ -10464,7 +10464,6 @@ var posts = document.querySelectorAll('.post');
 var counter = 0;
 var touchstartX = 0;
 var touchendX = 0;
-console.log('yo');
 /***
 FUNCTIONS
  ***/
@@ -10890,7 +10889,7 @@ var obreak = 0;
 try {
     var fetchDataPosts = function fetchDataPosts() {
         console.log($('#register').serialize());
-        $.getJSON('http://wearehubble.test/api', $('#register').serialize(), function (data) {
+        $.getJSON('http://hubble.test/api', $('#register').serialize(), function (data) {
             dataPosts = data;
             if ($(window).width() > 960 && obreak === 0) {
                 var limit = 9;
@@ -10918,6 +10917,7 @@ try {
     };
 
     var appendPosts = function appendPosts(limit) {
+        console.log(dataPosts);
         for (var i = 0; i < limit; i++) {
             $('.posts').append('<div class="post post--' + i + '" data-id="' + i + '">\n            <img class="post__thumbnail" src="' + dataPosts[i].image.src + '" alt="' + dataPosts[i].image.alt + '">\n            <div class="post__content">\n                <span class="post__label">' + dataPosts[i].label + '</span>\n                <h2 class="post__title">' + dataPosts[i].title + '</h2>\n            </div>\n        </div>');
         }

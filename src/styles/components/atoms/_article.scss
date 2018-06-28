@@ -30,6 +30,7 @@
     width: 100%;
     height: 100%;
     overflow: scroll;
+    z-index: 3;
     @include bp(desktop) {
         position: relative;
         width: 70%;
@@ -69,9 +70,21 @@
         border-radius: 0px 25px 25px 0px;
     }
 }
+.article__input--image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
 .article__placeholder {
     z-index: 1;
-    position: absolute;
+    position: relative;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -93,7 +106,9 @@
 .article__placeholder--desktop {
     display: none;
     @include bp(desktop) {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 30%;
         height: 100%;
         padding: 0px;
@@ -103,6 +118,9 @@
         cursor: pointer;
         background-color: #D5D5D5;
     }
+}
+.article__icon {
+    position: absolute;
 }
 .article__heading {
     position: absolute;
@@ -117,6 +135,12 @@
         height: auto;
         padding: 64px 32px 48px 32px;
     }
+}
+.article__input {
+    display: block;
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
 }
 .article__label {
     font-size: 15px;
@@ -134,6 +158,22 @@
         }
     }
 }
+.article__input--label {
+    font-size: 15px;
+    font-weight: 300;
+    color: $white;
+    @include bp(desktop) {
+        color: $black;
+    }
+    &::placeholder {
+        font-size: 15px;
+        font-weight: 300;
+        color: $white;
+        @include bp(desktop) {
+            color: $black;
+        }
+    }
+}
 .article__title {
     margin: 8px 0px 0px 0px;
     font-size: 30px;
@@ -146,6 +186,23 @@
         color: $black;
     }
     &--recruiter {
+        @include bp(desktop) {
+            color: $purpleDark;
+        }
+    }
+}
+.article__input--title {
+    margin: 8px 0px 0px 0px;
+    font-size: 30px;
+    font-weight: 500;
+    color: $white;
+    @include bp(desktop) {
+        color: $purpleDark;
+    }
+    &::placeholder {
+        font-size: 30px;
+        font-weight: 500;
+        color: $white;
         @include bp(desktop) {
             color: $purpleDark;
         }
@@ -181,12 +238,40 @@
         color: $purpleDark;
     }
 }
+.article__input--category {
+    margin: 0px 0px 12px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $purpleDark;
+    &::placeholder {
+        font-size: 20px;
+        font-weight: 500;
+        color: $purpleDark;
+    }
+}
 .article__text {
     margin: 0px;
     font-size: 17px;
     font-weight: 300;
     line-height: 20px;
     color: $black;
+}
+.article__input--text {
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    color: $black;
+    &::placeholder {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 20px;
+        color: $black;
+    }
+}
+.article__input--text--area {
+    width: 100%;
+    height: auto;
 }
 .article__footer {
     display: flex;

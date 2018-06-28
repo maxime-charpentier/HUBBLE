@@ -228,12 +228,14 @@
             <a class="button button--big" href="../recruiter">Recruiters</a>
         </nav>
         <form class="form" id="register" action="" method="post" role="form">
-            <input name="category" value="jobs" id="jobs" type="radio">
-            <input name="category" value="companies" id="companies" type="radio">
-            <input name="category" value="profession" id="profession" type="radio">
-            <input name="duration" value="6 months" id="jobs" type="radio">
-            <input name="duration" value="1 year" id="companies" type="radio">
-            <input name="duration" value="+1 year" id="profession" type="radio">
+            <input name="term" value="6 Months" id="6_mounths" type="radio">
+            <input name="term" value="1 Year" id="1_year" type="radio">
+            <input name="term" value="+1 Year" id="+1_year" type="radio">
+
+            <input name="field" value="Personnal Branding" id="jobs" type="radio">
+            <input name="field" value="Air Space" id="companies" type="radio">
+            <input name="field" value="Tech" id="profession" type="radio">
+            <input name="field" value="Machine & Maintenace" id="profession" type="radio">
 
             <input name="location" value="tatooine" id="tatooine" type="radio">
             <input name="location" value="neptune" id="neptune" type="radio">

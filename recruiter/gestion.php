@@ -41,7 +41,7 @@
                 <div class="gestion__header">
                     <h3 class="gestion__title"><span class="gestion__title--bold">Hello,</span> Uniliver<br>Welcome to your Dashboard</h3>
                     <div class="gestion__buttons">
-                        <button class="gestion__button">Add Jobs</button>
+                        <button class="gestion__button" id="add-button-desktop">Add Jobs</button>
                     </div>
                 </div>
                 <div class="gestion__container">
@@ -69,15 +69,15 @@
                             </li>
                         </ul>
                         <div class="dashboard__buttons">
-                            <button class="dashboard__button">Add Jobs</button>
+                            <button class="dashboard__button" id="add-button-mobile">Add Jobs</button>
                         </div>
                     </div>
                     <div class="job">
                         <div class="job__buttons">
-                            <div class="job__button">
+                            <div class="job__button job__button--edit">
                                 <img class="job__icon" src="../src/svg/edit.svg" alt="Edit icon">
                             </div>
-                            <div class="job__button">
+                            <div class="job__button job__button--delete">
                                 <img class="job__icon" src="../src/svg/delete.svg" alt="Edit icon">
                             </div>
                         </div>
@@ -88,10 +88,10 @@
                     </div>
                     <div class="job">
                         <div class="job__buttons">
-                            <div class="job__button">
+                            <div class="job__button job__button--edit">
                                 <img class="job__icon" src="../src/svg/edit.svg" alt="Edit icon">
                             </div>
-                            <div class="job__button">
+                            <div class="job__button job__button--delete">
                                 <img class="job__icon" src="../src/svg/delete.svg" alt="Edit icon">
                             </div>
                         </div>
@@ -102,10 +102,10 @@
                     </div>
                     <div class="job">
                         <div class="job__buttons">
-                            <div class="job__button">
+                            <div class="job__button job__button--edit">
                                 <img class="job__icon" src="../src/svg/edit.svg" alt="Edit icon">
                             </div>
-                            <div class="job__button">
+                            <div class="job__button job__button--delete">
                                 <img class="job__icon" src="../src/svg/delete.svg" alt="Edit icon">
                             </div>
                         </div>
@@ -116,10 +116,10 @@
                     </div>
                     <div class="job">
                         <div class="job__buttons">
-                            <div class="job__button">
+                            <div class="job__button job__button--edit">
                                 <img class="job__icon" src="../src/svg/edit.svg" alt="Edit icon">
                             </div>
-                            <div class="job__button">
+                            <div class="job__button job__button--delete">
                                 <img class="job__icon" src="../src/svg/delete.svg" alt="Edit icon">
                             </div>
                         </div>
@@ -132,7 +132,7 @@
             </section>
         </div>
         <article class="article article--recruiter article--hidden" id="article-recruiter-show">
-            <button class="button button--small button--article z-index button--purple--dark"></button>
+            <button class="button button--small button--article z-index button--purple--dark" id="close-button-show"></button>
             <div class="article__container">
                 <header class="article__header">
                     <img class="article__image" src="../src/images/1.jpg" alt="Job Image">
@@ -169,7 +169,49 @@
             <img class="article__image--desktop" src="../src/images/1.jpg" alt="Job Image">
         </article>
         <article class="article article--recruiter article--hidden" id="article-recruiter-add">
-            <button class="button button--small button--article z-index button--purple--dark"></button>
+            <button class="button button--small button--article z-index button--purple--dark" id="close-button-add"></button>
+            <form action="post" class="article__container">
+                <header class="article__header">
+                    <button class="article__placeholder">
+                        <img class="article__icon" src="../src/svg/image-upload.svg" alt="Image upload icon">
+                        <input type="file" class="article__input article__input--image">
+                    </button>
+                    <div class="article__heading">
+                        <input class="article__input article__input--label" placeholder="Business"></input>
+                        <input class="article__input article__input--title" placeholder="Corporate Disorganizer"></input>
+                    </div>
+                </header>
+                <main class="article__content">
+                    <ul class="article__items">
+                        <li class="article__item">
+                            <input placeholder="Term" class="article__input article__input--category"></input>
+                            <input placeholder="Job's duration" class="article__input article__input--text"></input>
+                        </li>
+                        <li class="article__item">
+                            <input placeholder="Location" class="article__input article__input--category"></input>
+                            <input placeholder="Job's location" class="article__input article__input--text"></input>
+                        </li>
+                        <li class="article__item">
+                            <input placeholder="Salary" class="article__input article__input--category"></input>
+                            <input placeholder="0.00 SC" class="article__input article__input--text"></input>
+                        </li>
+                        <li class="article__item">
+                            <input placeholder="Description" class="article__input article__input--category"></input>
+                            <textarea rows="10" placeholder="Job's description" class="article__input article__input--text article__input--text--textarea"></textarea>
+                        </li>
+                    </ul>
+                </main>
+                <footer class="article__footer">
+                    <button class="button button--big button--dark button--purple--dark" id="button-apply">Apply</button>
+                </footer>
+            </form>
+            <button class="article__placeholder--desktop">
+                <img class="article__icon" src="../src/svg/image-upload.svg" alt="Image upload icon">
+                <input type="file" class="article__input article__input--image">
+            </button>
+        </article>
+        <article class="article article--recruiter article--hidden" id="article-recruiter-edit">
+            <button class="button button--small button--article z-index button--purple--dark" id="close-button-edit"></button>
             <div class="article__container">
                 <header class="article__header">
                     <button class="article__placeholder">
