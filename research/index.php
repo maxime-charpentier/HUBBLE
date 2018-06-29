@@ -140,7 +140,7 @@
                 </div>
                 <div class="interview__wrapper">
                     <div class="interview" id="interview-1">
-                        <img class="interview__profil" src="src/images/profil.jpg" alt="Profil picture">
+                        <img class="interview__profil" src="src/images/jay.jpg" alt="Profil picture">
                         <h3 class="interview__title">Hello, <span class="interview__title interview__title--light">Jay Dogo</span></h3>
                         <h4 class="interview__text">Applying for <span class="interview__text--bold">Zero G Mechanics</span></h4>
                         <button class="interview__button" id="interview-start">Take the interview</button>
@@ -161,7 +161,7 @@
                         </div>
                         <div class="interview__footer">
                             <button class="interview__button">Yawn...</button>
-                            <button class="interview__button">Excited</button>
+                            <button class="interview__button" id="interview-button-jay">Excited</button>
                         </div>
                     </div>
                 </div>

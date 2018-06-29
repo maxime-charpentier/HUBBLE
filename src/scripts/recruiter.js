@@ -123,3 +123,18 @@ closeButtonShow.addEventListener('click', function() {
 var input = $(".article__input--image");
 
 input.replaceWith(input.val('').clone(true));
+
+
+var applyButton = document.querySelector('#button-apply-target');
+var form = document.querySelector('#form');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+});
+
+var jobTarget = document.querySelector('#job-target');
+
+applyButton.addEventListener('click', function() {
+    articleAdd.classList.add('article--hidden');
+    jobTarget.classList.remove('job--hidden');
+});

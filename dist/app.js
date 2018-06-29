@@ -10881,6 +10881,15 @@ startButton.addEventListener('click', function () {
     interviewsContainer.style.marginLeft = '-' + counter * windowWidth + 'px';
 });
 
+var jayButton = document.querySelector('#interview-button-jay');
+
+jayButton.addEventListener('click', function () {
+    counter++;
+    var windowWidth = document.body.clientWidth;
+    interviewsContainer.style.transition = '.4s ease';
+    interviewsContainer.style.marginLeft = '-' + counter * windowWidth + 'px';
+});
+
 /***
 AJAX REQUEST FOR GENERATING POSTS
  ***/

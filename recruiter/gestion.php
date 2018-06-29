@@ -18,8 +18,8 @@
             </header>
             <section class="profil">
                 <div class="profil__modal">
-                    <img class="profil__image" src="../src/images/profil.jpg" alt="Company picture">
-                    <h3 class="profil__title"><span class="profil__title--bold">Hello,</span> Uniliver</h3>
+                    <img class="profil__image" src="../src/images/unilever.jpg" alt="Company picture">
+                    <h3 class="profil__title"><span class="profil__title--bold">Hello,</span> Unilever</h3>
                     <ul class="profil__items">
                         <li class="profil__item">
                             <p class="profil__text">Manage Company Profile</p>
@@ -47,7 +47,7 @@
                 <div class="gestion__container">
                     <div class="dashboard">
                         <div class="dashboard__profil">
-                            <img class="dashboard__image" src="../src/images/profil.jpg" alt="Company picture">
+                            <img class="dashboard__image" src="../src/images/unilever.jpg" alt="Company picture">
                             <h3 class="dashboard__title"><span class="dashboard__title--bold">Hello, Blue Agency</span><br>Welcome on your Dashboard</h3>
                         </div>
                         <ul class="dashboard__items">
@@ -72,7 +72,7 @@
                             <button class="dashboard__button" id="add-button-mobile">Add Jobs</button>
                         </div>
                     </div>
-                    <div class="job">
+                    <div class="job" style="background-image: url('../src/images/PlanetsWeatherManager.jpg');">
                         <div class="job__buttons">
                             <div class="job__button job__button--edit">
                                 <img class="job__icon" src="../src/svg/edit.svg" alt="Edit icon">
@@ -86,7 +86,7 @@
                             <span class="job__label">Food & Environment</span>
                         </div>
                     </div>
-                    <div class="job">
+                    <div class="job" style="background-image: url('../src/images/MicrobialBalanceAgent.jpg');">
                         <div class="job__buttons">
                             <div class="job__button job__button--edit">
                                 <img class="job__icon" src="../src/svg/edit.svg" alt="Edit icon">
@@ -96,11 +96,11 @@
                             </div>
                         </div>
                         <div class="job__infos">
-                            <h4 class="job__title">Corporate<br>Disorganizer</h4>
-                            <span class="job__label">Business</span>
+                            <h4 class="job__title">Microbial Balance<br>Agent</h4>
+                            <span class="job__label">Food & Environment</span>
                         </div>
                     </div>
-                    <div class="job job--hidden" id="job-target">
+                    <div class="job job--hidden" id="job-target" style="background-image: url('../src/images/NurseryPlantsGrower.jpg');">
                         <div class="job__buttons">
                             <div class="job__button job__button--edit">
                                 <img class="job__icon" src="../src/svg/edit.svg" alt="Edit icon">
@@ -110,11 +110,11 @@
                             </div>
                         </div>
                         <div class="job__infos">
-                            <h4 class="job__title">Corporate<br>Disorganizer</h4>
-                            <span class="job__label">Business</span>
+                            <h4 class="job__title">Nursery Plants<br>Grower</h4>
+                            <span class="job__label">Food & Environment</span>
                         </div>
                     </div>
-                    <div class="job">
+                    <div class="job" style="background-image: url('../src/images/RadiocativeBiologist.jpg');">
                         <div class="job__buttons">
                             <div class="job__button job__button--edit">
                                 <img class="job__icon" src="../src/svg/edit.svg" alt="Edit icon">
@@ -124,8 +124,8 @@
                             </div>
                         </div>
                         <div class="job__infos">
-                            <h4 class="job__title">Corporate<br>Disorganizer</h4>
-                            <span class="job__label">Business</span>
+                            <h4 class="job__title">Radioactive<br>Biologist</h4>
+                            <span class="job__label">Food & Environment</span>
                         </div>
                     </div>
                 </div>
@@ -135,42 +135,38 @@
             <button class="button button--small button--article z-index button--purple--dark" id="close-button-show"></button>
             <div class="article__container">
                 <header class="article__header">
-                    <img class="article__image" src="../src/images/1.jpg" alt="Job Image">
+                    <img class="article__image" src="../src/images/NurseryPlantsGrower.jpg" alt="Job Image">
                     <div class="article__heading">
-                        <span class="article__label article__label--recruiter">Business</span>
-                        <h3 class="article__title article__title--recruiter">Corporate<br>Disorganizer</h3>
+                        <span class="article__label article__label--recruiter">Food & Environment</span>
+                        <h3 class="article__title article__title--recruiter">Nursery Plants<br>Grower</h3>
                     </div>
                 </header>
                 <main class="article__content">
                     <ul class="article__items">
                         <li class="article__item">
                             <h4 class="article__category article__category--recruiter article__category--term">Term</h4>
-                            <p class="article__text article__text--term">1 year mission</p>
+                            <p class="article__text article__text--term">6 months</p>
                         </li>
                         <li class="article__item">
                             <h4 class="article__category article__category--recruiter">Location</h4>
-                            <p class="article__text">Lunar Spaceship, Venus</p>
-                            <p class="article__text">Right Ascension: 08h 37m</p>
+                            <p class="article__text">Orilla Planet</p>
                         </li>
                         <li class="article__item">
                             <h4 class="article__category article__category--recruiter">Salary</h4>
-                            <p class="article__text">40k ES / Year</p>
+                            <p class="article__text">2200 SC</p>
                         </li>
                         <li class="article__item">
                             <h4 class="article__category article__category--recruiter">Description</h4>
-                            <p class="article__text">The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common lorem ipsum text reads as follows Lorem ipsum dolor sit ametsThe most common lorem ipsum text reads as follows Lorem ipsum dolor sit amets.The most common</p>
+                            <p class="article__text">Provide daily nursery oversight and management, communicating with staff regarding schedules and assignment of duties. Oversees overall nursery work flow. Nursery growers raise and sell plants, flowers, shrubs, and trees. Some plants are grown from seed in the nursery, outside in beds, or inside in greenhouses.</p>
                         </li>
                     </ul>
                 </main>
-                <footer class="article__footer">
-                    <button class="button button--big button--dark button--purple--dark" id="button-apply">Apply</button>
-                </footer>
             </div>
-            <img class="article__image--desktop" src="../src/images/1.jpg" alt="Job Image">
+            <img class="article__image--desktop" src="../src/images/NurseryPlantsGrower.jpg" alt="Job Image">
         </article>
         <article class="article article--recruiter article--hidden" id="article-recruiter-add">
             <button class="button button--small button--article z-index button--purple--dark" id="close-button-add"></button>
-            <form action="post" class="article__container">
+            <form class="article__container" id="form">
                 <header class="article__header">
                     <button class="article__placeholder">
                         <img class="article__icon" src="../src/svg/image-upload.svg" alt="Image upload icon">
@@ -202,7 +198,7 @@
                     </ul>
                 </main>
                 <footer class="article__footer">
-                    <button class="button button--big button--dark button--purple--dark" id="button-apply">Apply</button>
+                    <button type="submit" class="button button--big button--dark button--purple--dark" id="button-apply-target">Apply</button>
                 </footer>
             </form>
             <button class="article__placeholder--desktop">

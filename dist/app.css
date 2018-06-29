@@ -1313,6 +1313,8 @@ Burger Button
   -webkit-box-shadow: -1px 4px 18px 0 rgba(0, 0, 0, 0.5);
           box-shadow: -1px 4px 18px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (min-width: 960px) {
@@ -1409,22 +1411,10 @@ Burger Button
   color: #FAFAFA;
 }
 
-@media (min-width: 960px) {
-  .job__title {
-    color: #2B2A2B;
-  }
-}
-
 .job__label {
   font-size: 17px;
   font-weight: 300;
   color: #FAFAFA;
-}
-
-@media (min-width: 960px) {
-  .job__label {
-    color: #2B2A2B;
-  }
 }
 
 .modal__container {
